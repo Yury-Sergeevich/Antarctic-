@@ -13,7 +13,7 @@ body {
 
 html {
   @include font(16px, 19.5px, 500);
-  color: $second-color;
+  color: $primary-color;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
