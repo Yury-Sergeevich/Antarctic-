@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  margin-right: auto;
+}
+
+.logo img {
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      width: 38px;
+      height: 20px;
+    }
+  }
+}

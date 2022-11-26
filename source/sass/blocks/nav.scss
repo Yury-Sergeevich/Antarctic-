@@ -1,0 +1,45 @@
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__item:not(:last-child) {
+  margin: 0 33px 0 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      margin: 0 23px 0 0;
+    }
+  }
+}
+
+.nav__item a {
+  @include font (16px, 19.5px, 500);
+
+  padding: 13px 0;
+  color: $second-color;
+  outline: none;
+
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        color: $hover-color;
+      }
+    }
+  }
+
+  @mixin active {
+    &.focus-visible:active {
+      color: $active-color;
+    }
+  }
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      @include font(14px, 17px, 500);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  padding: 35px 0 0 0;
+  z-index: 10;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 30px 0 0 0;
+    }
+  }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
