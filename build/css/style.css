@@ -760,6 +760,19 @@ p {
   font-weight: 400;
 }
 
+.advantages {
+  background: url("../img/background/advantages-backg@1x.jpg");
+}
+
+.advantages h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1061,6 +1074,7 @@ p {
 
   .nav__list {
     opacity: 0;
+    pointer-events: none;
   }
 
   .promo {

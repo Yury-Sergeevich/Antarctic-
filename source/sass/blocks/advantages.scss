@@ -1,0 +1,10 @@
+.advantages {
+  background: url("../img/background/advantages-backg@1x.jpg");
+}
+
+.advantages h2 {
+  @include font(28px, 150%, 600);
+
+  text-align: center;
+  margin: 0 0 60px 0;
+}

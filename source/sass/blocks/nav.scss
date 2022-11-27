@@ -8,6 +8,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       opacity: 0;
+      pointer-events: none;
     }
   }
 }
