@@ -1,5 +1,29 @@
 .advantages {
-  background: url("../img/background/advantages-backg@1x.jpg");
+  background: url("../img/background/advantages-backg@1x.jpg") no-repeat;
+  background-size: cover;
+
+  @mixin retina {
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/background/advantages-backg@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.advantages .container {
+  padding: 120px 20px;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 100px 45px;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 65px 15px;
+    }
+  }
 }
 
 .advantages h2 {
@@ -7,4 +31,131 @@
 
   text-align: center;
   margin: 0 0 60px 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      @include font(26px, 150%, 600);
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      @include font(24px, 150%, 600);
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      column-gap: 30px;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 30px;
+    }
+  }
+}
+
+.advantages__item {
+  position: relative;
+  background: $second-color;
+  padding: 87px 31px 30px 30px;
+
+  &--liner {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background: url("../img/svg/liner.svg") no-repeat;
+      width: 27px;
+      height: 32px;
+
+      @include vp-1023 {
+        @media (max-width: ($vp-1024 - 1px)) {
+          top: 26px;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  &--all-inclusive {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background: url("../img/svg/all-inclusive.svg") no-repeat;
+      width: 38px;
+      height: 32px;
+
+      @include vp-1023 {
+        @media (max-width: ($vp-1024 - 1px)) {
+          top: 26px;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  &--zadiac {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background: url("../img/svg/zodiac.svg") no-repeat;
+      width: 44px;
+      height: 32px;
+
+      @include vp-1023 {
+        @media (max-width: ($vp-1024 - 1px)) {
+          top: 26px;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 76px 16px 5px 20px;
+    }
+  }
+}
+
+.advantages__item h3 {
+  @include font(18px, 150%, 500);
+  margin: 0 0 20px 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      @include font(18px, 140%, 500);
+    }
+  }
+}
+
+.advantages__item p {
+  @include font(14px, 140%, 400);
+  margin: 0 0 20px 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      @include font(14px, 140%, 400);
+    }
+  }
 }
