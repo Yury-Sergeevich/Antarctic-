@@ -992,6 +992,40 @@ p {
     font-weight: 400;
     margin: 0 0 29px 0;
   }
+
+  .about .container {
+    padding: 100px 45px;
+  }
+
+  .about__content {
+    width: 48%;
+    margin-right: 25px;
+  }
+
+  .about__content h2,
+  p {
+    margin: 0 0 30px 0;
+  }
+
+  .about__content h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 140%;
+    font-weight: 600;
+    width: 205px;
+  }
+
+  .about__content p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  .about__wrapper-image img {
+    width: 324px;
+    height: 174px;
+  }
 }
 
 @media (max-width: 1023px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1016,6 +1050,72 @@ p {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .logo img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .nav__list {
+    opacity: 0;
+  }
+
+  .promo {
+    background-position: 49% -7%;
+    background-size: auto;
+  }
+
+  .promo__content {
+    padding: 235px 0 155px 0;
+  }
+
+  .promo__content h1 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 125%;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+  }
+
+  .promo__content p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+  }
+
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 60px 15px 50px 15px;
+  }
+
+  .about__content {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .about__content h2,
+  p {
+    margin: 0 0 30px 0;
+  }
+
+  .about__content h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+  }
+
+  .about__wrapper-image img {
+    width: 290;
+    height: 156px;
   }
 }
 
