@@ -1,5 +1,7 @@
 .promo {
   background: url("../img/background/top-container@1x.jpg") no-repeat center;
+  background-size: cover;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/background/top-container@2x.jpg");

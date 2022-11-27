@@ -444,7 +444,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 
 a {
@@ -688,6 +688,9 @@ button,
 
 .promo {
   background: url("../img/background/top-container@1x.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .promo__content {
@@ -711,6 +714,50 @@ button,
   font-weight: 400;
   color: #f9fbfd;
   margin: 0 0 30px 0;
+}
+
+.about {
+  background: #ffffff;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 120px 20px 145px 20px;
+}
+
+.about__content {
+  width: 512px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.about__content h2,
+p {
+  margin: 0 0 40px 0;
+}
+
+.about__content h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.about__content p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .btn {
