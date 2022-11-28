@@ -862,13 +862,11 @@ p {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 260px);
   gap: 30px 30px;
 }
 
 .cruises__item {
-  position: relative;
   cursor: pointer;
   width: 260px;
   height: 386px;
@@ -884,9 +882,22 @@ p {
   transform: perspective(600px) rotateY(0deg);
 }
 
+.cruises__item-front h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #f9fbfd;
+}
+
 .cruises__item-front,
 .cruises__item-back {
   width: 260px;
+  height: 386px;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -919,7 +930,7 @@ p {
 }
 
 .cruises__back-content {
-  padding: 35px 25px;
+  padding: 27px 25px;
 }
 
 .cruises__info-list {
@@ -937,7 +948,7 @@ p {
   font-size: 14px;
   line-height: 140%;
   font-weight: 500;
-  margin: 0 0 10px 0;
+  margin: 0;
   color: #f9fbfd;
 }
 
@@ -948,6 +959,12 @@ p {
   font-weight: 400;
   margin-bottom: 20px;
   color: #d8d8d9;
+}
+
+.cruises__item-button {
+  width: 100%;
+  display: block;
+  padding: 13px;
 }
 
 .btn {
@@ -1269,6 +1286,38 @@ p {
     line-height: 140%;
     font-weight: 400;
   }
+
+  .cruises h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 26px;
+    line-height: 150%;
+    font-weight: 600;
+  }
+
+  .cruises .container {
+    grid-template-columns: repeat(auto-fit, 309px);
+    padding: 100px 60px;
+  }
+
+  .cruises__list {
+    grid-template-columns: repeat(auto-fit, 309px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .cruises__item {
+    width: 309px;
+  }
+
+  .cruises__item-front img {
+    width: 309px;
+  }
+
+  .cruises__item-front,
+  .cruises__item-back {
+    width: 309px;
+  }
 }
 
 @media (max-width: 1023px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1380,6 +1429,34 @@ p {
     -ms-grid-rows: (1fr)[3];
     grid-template-rows: repeat(3, 1fr);
     row-gap: 30px;
+  }
+
+  .cruises h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 600;
+  }
+
+  .cruises .container {
+    padding: 65px 25px;
+  }
+
+  .cruises__list {
+    grid-template-columns: repeat(auto-fit, 270px);
+  }
+
+  .cruises__item {
+    width: 270px;
+  }
+
+  .cruises__item-front img {
+    width: 270px;
+  }
+
+  .cruises__item-front,
+  .cruises__item-back {
+    width: 270px;
   }
 }
 
