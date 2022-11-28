@@ -1,0 +1,176 @@
+.address .container {
+  padding: 120px 20px;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 100px 45px;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 65px 15px;
+    }
+  }
+}
+
+.address__wrapper {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  column-gap: 100px;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.address__map-wrapper {
+  position: relative;
+}
+
+.address__map-wrapper img {
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      width: 100%;
+      height: 335px;
+      object-fit: cover;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      object-fit: cover;
+      height: 316px;
+    }
+  }
+}
+
+.address__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      grid-template-columns: 324px 1fr;
+      width: 100%;
+      height: 335px;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 100%;
+      height: 316px;
+    }
+  }
+}
+
+.address__map-marker {
+  position: absolute;
+  top: 249px;
+  left: 217px;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      top: 224px;
+      left: 112px;
+    }
+  }
+}
+
+.address__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.address__info-wrapper p {
+  @include font(18px, 150%, 500);
+
+  margin: 0 0 45px 0;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+.address__info span {
+  @include font(16px, 150%, 400);
+
+  display: block;
+  font-style: normal;
+  color: $primary-color;
+  margin: 0 0 33px 0;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 22px;
+    background: url("../img/svg/marker.svg") no-repeat center;
+  }
+}
+
+.address__info a {
+  @include font(16px, 150%, 400);
+
+  cursor: pointer;
+  display: block;
+  font-style: normal;
+  color: $primary-color;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url("../img/svg/phone.svg") no-repeat center;
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin: 0 0 43px 0;
+    }
+  }
+
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        color: #008cff;
+      }
+    }
+  }
+
+  @include active {
+    &.focus-visible:active {
+      color: #005eac;
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 1px solid #0161b0;
+    }
+  }
+}
