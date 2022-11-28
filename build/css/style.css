@@ -1247,6 +1247,96 @@ p {
   outline: 1px solid #0161b0;
 }
 
+.footer {
+  background-color: #011c40;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.footer__logo {
+  display: block;
+  margin-right: 40px;
+}
+
+.footer__nav {
+  margin-right: auto;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.footer__nav-item a {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  outline: none;
+  color: #f9fbfd;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.footer__nav-item a.focus-visible:active.focus-visible:active {
+  color: #04191f;
+}
+
+.footer__nav-item a.focus-visible:focus.focus-visible:focus {
+  outline: 2px solid #0092bb;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item a {
+  cursor: pointer;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.social__item-icon {
+  fill: #f9fbfd;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1660,6 +1750,40 @@ p {
   .address__info-wrapper p {
     margin: 0 0 40px 0;
   }
+
+  .footer .container {
+    padding: 50px 45px;
+  }
+
+  .footer__logo {
+    margin-right: 25px;
+  }
+
+  .footer__logo img {
+    width: 38px;
+    height: 32px;
+  }
+
+  .footer__nav-item:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  .footer__nav-item a {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+
+  .social__item {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__item-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 1023px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1880,11 +2004,59 @@ p {
   .address__info a {
     margin: 0 0 43px 0;
   }
+
+  .footer .container {
+    padding: 40px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    margin: 0 0 30px 0;
+  }
+
+  .footer__logo img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .footer__nav-item:not(:last-child) {
+    margin: 0 0 23px 0;
+  }
+
+  .footer__nav-item {
+    margin: 0 0 23px 0;
+  }
+
+  .social {
+    width: 92px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 22px;
+  }
 }
 
 @media (hover: hover) and (hover: hover) {
   .nav__item a:hover:not(.focus-visible):hover:not(.focus-visible) {
-    color: #bababc;
+    color: #00c8ff;
   }
 
   .form__input input:hover:not(.focus-visible):hover:not(.focus-visible) {
@@ -1898,6 +2070,14 @@ p {
 
   .address__info a:hover:not(.focus-visible):hover:not(.focus-visible) {
     color: #008cff;
+  }
+
+  .footer__nav-item a:hover:not(.focus-visible):hover:not(.focus-visible) {
+    color: #00c8ff;
+  }
+
+  .social__item-icon:hover:not(.focus-visible):hover:not(.focus-visible) {
+    fill: #00c8ff;
   }
 }
 

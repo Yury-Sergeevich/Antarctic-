@@ -33,7 +33,7 @@
   @include hover {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        color: $hover-color;
+        color: #00c8ff;
       }
     }
   }
