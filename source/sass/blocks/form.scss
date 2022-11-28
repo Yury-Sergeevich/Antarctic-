@@ -1,0 +1,171 @@
+.form {
+  width: 403px;
+  background-color: $primary-color;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  padding: 50px;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 40px 30px;
+      width: 100%;
+    }
+  }
+}
+
+.form h2 {
+  @include font(18px, 150%, 500);
+
+  margin: 0 0 35px 0;
+  color: $second-color;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      @include font(18px, 140%, 500);
+      text-align: center;
+    }
+  }
+}
+
+.form__input input {
+  width: 100%;
+  border: none;
+  padding: 11px 0 11px 16px;
+  outline: none;
+  color: rgba(1, 28, 64, 0.7);
+
+  &::placeholder {
+    color: rgba(1, 28, 64, 0.7);
+  }
+
+  @include font(14px, 150%, 400);
+
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        outline: 2px solid #6fe0fc;
+      }
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 2px solid #42d2f6;
+    }
+  }
+
+  @include active {
+    &.focus-visible:active {
+      outline: 2px solid #53a9be;
+    }
+  }
+}
+
+.form__input {
+  margin-bottom: 30px;
+
+  @mixin focus {
+    &.focus-visible:focus {
+      outline: 2px solid #88c7f7;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//checkbox-custom
+
+.form__check {
+  margin: 0 0 30px 0;
+}
+
+.form__check label {
+  display: block;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.form__check input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + span {
+    background: url("../img/svg/check.svg") no-repeat center, $second-color;
+  }
+
+  &:hover + span {
+    outline: 2px solid #3aa5f6;
+  }
+
+  &:focus + span {
+    outline: 2px solid #68bdff;
+  }
+
+  &:active + span {
+    outline: 2px solid #4a8dc1;
+  }
+}
+
+.form__check span {
+  margin-left: -24px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $second-color;
+}
+
+.form__check-label {
+  @include font(10px, 130%, 400);
+
+  position: relative;
+  top: 2px;
+  margin: 0;
+  display: block;
+  color: $second-color;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      top: -2px;
+    }
+  }
+}
+
+
+.form__button-submit {
+  @include font(14px, 150%, 600);
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0 17px;
+  background: $second-color;
+
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background: #6cbefd;
+        color: $second-color;
+      }
+    }
+  }
+
+  @mixin active {
+    &.focus-visible:active {
+      background: #42a6f3;
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 2px solid #42d2f6;
+    }
+  }
+
+  &:disabled {
+    background: $second-color;
+  }
+}
