@@ -30,11 +30,14 @@
   @include font(28px, 150%, 600);
 
   text-align: center;
-  margin: 0 0 60px 0;
+  width: 228px;
+  margin: 0 auto 60px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(26px, 150%, 600);
+
+      width: 212px;
     }
   }
 
@@ -42,6 +45,7 @@
     @media (max-width: ($vp-768 - 1px)) {
       @include font(24px, 150%, 600);
       margin: 0 0 40px 0;
+      width: 196px;
     }
   }
 }

@@ -1,17 +1,20 @@
 .cruises h2 {
   @include font(28px, 150%, 600);
-  margin: 0 0 60px 0;
+  margin: 0 auto 60px;
   text-align: center;
+  width: 302px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(26px, 150%, 600);
+      width: 281px;
     }
   }
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       @include font(24px, 150%, 600);
+      width: 259px;
     }
   }
 }
@@ -82,6 +85,10 @@
 }
 
 .cruises__item-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       width: 309px;
@@ -128,11 +135,22 @@
 
 .cruises__item-front {
   transform: perspective(600px) rotateY(0deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  }
 }
 
 .cruises__item-back {
   transform: perspective(600px) rotateY(180deg);
   background-color: #011c40;
+  overflow-y: scroll;
 }
 
 .cruises__back-content h3 {
@@ -177,4 +195,5 @@
   width: 100%;
   display: block;
   padding: 13px;
+  cursor: pointer;
 }

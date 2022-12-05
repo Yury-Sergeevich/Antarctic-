@@ -691,6 +691,7 @@ button,
   background-size: cover;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: -70px;
 }
 
 .promo__content {
@@ -702,6 +703,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
+  width: 636px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 30px 0;
@@ -714,6 +716,7 @@ button,
   font-weight: 400;
   color: #f9fbfd;
   margin: 0 0 30px 0;
+  width: 430px;
 }
 
 .about {
@@ -775,7 +778,8 @@ p {
   line-height: 150%;
   font-weight: 600;
   text-align: center;
-  margin: 0 0 60px 0;
+  width: 228px;
+  margin: 0 auto 60px;
 }
 
 .advantages__list {
@@ -848,8 +852,9 @@ p {
   font-size: 28px;
   line-height: 150%;
   font-weight: 600;
-  margin: 0 0 60px 0;
+  margin: 0 auto 60px;
   text-align: center;
+  width: 302px;
 }
 
 .cruises .container {
@@ -880,6 +885,13 @@ p {
 .cruises__item:hover > .cruises__item-back {
   -webkit-transform: perspective(600px) rotateY(0deg);
   transform: perspective(600px) rotateY(0deg);
+}
+
+.cruises__item-front img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .cruises__item-front h3 {
@@ -914,10 +926,23 @@ p {
   transform: perspective(600px) rotateY(0deg);
 }
 
+.cruises__item-front::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+}
+
 .cruises__item-back {
   -webkit-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
   background-color: #011c40;
+  overflow-y: scroll;
 }
 
 .cruises__back-content h3 {
@@ -965,6 +990,7 @@ p {
   width: 100%;
   display: block;
   padding: 13px;
+  cursor: pointer;
 }
 
 .feedback {
@@ -1562,6 +1588,7 @@ p {
     font-size: 50px;
     line-height: 60.95px;
     font-weight: 700;
+    width: 589px;
     margin: 0 0 29px 0;
   }
 
@@ -1571,6 +1598,7 @@ p {
     line-height: 21.94px;
     font-weight: 400;
     margin: 0 0 29px 0;
+    width: 387px;
   }
 
   .about .container {
@@ -1616,6 +1644,7 @@ p {
     font-size: 26px;
     line-height: 150%;
     font-weight: 600;
+    width: 212px;
   }
 
   .advantages__list {
@@ -1662,6 +1691,7 @@ p {
     font-size: 26px;
     line-height: 150%;
     font-weight: 600;
+    width: 281px;
   }
 
   .cruises .container {
@@ -1836,6 +1866,7 @@ p {
     font-size: 36px;
     line-height: 125%;
     font-weight: 700;
+    width: 82%;
     margin: 0 0 25px 0;
   }
 
@@ -1845,6 +1876,7 @@ p {
     line-height: 140%;
     font-weight: 400;
     margin: 0 0 25px 0;
+    width: 68.7%;
   }
 
   .about .container {
@@ -1887,6 +1919,7 @@ p {
     line-height: 150%;
     font-weight: 600;
     margin: 0 0 40px 0;
+    width: 196px;
   }
 
   .advantages__list {
@@ -1902,6 +1935,7 @@ p {
     font-size: 24px;
     line-height: 150%;
     font-weight: 600;
+    width: 259px;
   }
 
   .cruises .container {
