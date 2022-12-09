@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {openMobMenu} from './modules/mobile-menu';
+import {maskPhone} from './modules/mask-phone';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   openMobMenu();
+  maskPhone();
 
   // Modules
   // ---------------------------------

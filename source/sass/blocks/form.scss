@@ -118,12 +118,13 @@
 }
 
 .form__check-label {
+  display: contents;
+
   @include font(10px, 130%, 400);
 
   position: relative;
   top: 2px;
   margin: 0;
-  display: block;
   color: $second-color;
 
   @include vp-767 {
@@ -132,7 +133,6 @@
     }
   }
 }
-
 
 .form__button-submit {
   @include font(14px, 150%, 600);

@@ -154,7 +154,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/atlantis@1x.webp 1x, ./img/cards/atlantis@2x.webp 2x">
-                      <img src="./img/cards/atlantis@1x.jpg"" srcset="./img/cards/atlantis@2x.jpg 2x" width="260" height="386" alt="Круиз Атлантис">
+                      <img src="./img/cards/atlantis@1x.jpg" srcset="./img/cards/atlantis@2x.jpg 2x" width="260" height="386" alt="Круиз Атлантис">
                     </picture>
                     <h3>Круиз "Атлантис"</h3>
                   </div>
@@ -187,7 +187,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/odysseus@1x.webp, ./img/cards/odysseus@2x.webp 2x">
-                      <img src="./img/cards/odysseus@1x.jpg" srcset="./cards/odysseus@2x.jpg 2x" width="260" height="386" alt="Круиз Одиссей">
+                      <img src="./img/cards/odysseus@1x.jpg" srcset=".img/cards/odysseus@2x.jpg 2x" width="260" height="386" alt="Круиз Одиссей">
                     </picture>
                     <h3>Круиз "Одиссей"</h3>
                   </div>
@@ -219,7 +219,7 @@
               <li class="cruises__item">
                   <div class="cruises__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/cards/olympia@2x.webp, ./img/cards/olympia@2x.webp">
+                      <source type="image/webp" srcset="./img/cards/olympia@1x.webp, ./img/cards/olympia@2x.webp 2x">
                       <img src="./img/cards/olympia@1x.jpg" srcset="./img/cards/olympia@2x.jpg 2x" width="260" height="386" alt="Круиз Олимпия">
                     </picture>
                     <h3>Круиз "Олимпия"</h3>
@@ -311,8 +311,8 @@
                           <p>от 12500 $</p>
                         </li>
                       </ul>
+                      <button class="cruises__item-button" type="button">Забронировать</button>
                     </div>
-                    <button class="cruises__item-button" type="button">Забронировать</button>
                   </div>
               </li>
               <li class="cruises__item">
@@ -358,31 +358,34 @@
                 <h2>Раннее бронирование</h2>
                 <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
               </div>
-              <form class="feedback__form form" action="" method="get">
+              <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
                 <h2>Оставьте заявку и мы свяжемся с вами в ближайшее время</h2>
                 <div class="form__input">
                   <label>
-                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Имя" name="name" required>
+                    <span class="visually-hidden">Введите ваше имя</span>
                   </label>
                 </div>
                 <div class="form__input">
                   <label>
-                    <input type="phone" placeholder="Телефон">
+                    <input class="form__input-phone" type="tel" placeholder="Телефон" name="phone" required>
+                    <span class="visually-hidden">Введите ваш телефон</span>
                   </label>
                 </div>
                 <div class="form__input">
                   <label>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" name="email" required>
+                    <span class="visually-hidden">Введите ваше почту</span>
                   </label>
                 </div>
                 <div class="form__check">
                   <label>
-                    <input type="checkbox" name="personal-data" checked>
+                    <input type="checkbox" name="personal-data" checked required>
                     <span></span>
-                    <p class="form__check-label">Я согласен на обработку моих персональных данных</p>
+                    <span class="form__check-label">Я согласен на обработку моих персональных данных</span>
                   </label>
                 </div>
-                <button class="form__button-submit" type="submit" disabled>Оставить заявку</button>
+                <button class="form__button-submit" type="submit">Оставить заявку</button>
               </form>
             </div>
           </div>
@@ -395,7 +398,7 @@
                 <picture>
                   <img src="./img/content/map@1x.jpg" width="560" height="306" alt="Карта с адресом компании">
                 </picture>
-                <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b5c44445b913d3d5ede89af184817741a5e4b3732434962574e15200f5d6a49&amp;source=constructor" width="560" height="306" frameborder="0"></iframe>
+                <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b5c44445b913d3d5ede89af184817741a5e4b3732434962574e15200f5d6a49&amp;source=constructor" width="560" height="306"></iframe>
                 <svg class="address__map-marker" width="18" height="22">
                   <use xlink:href="img/sprite.svg#marker"></use>
                 </svg>
