@@ -1,45 +1,19 @@
-.promo {
-  background: url("../img/background/top-container@1x.jpg") no-repeat center;
-  background-size: cover;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  margin-top: -70px;
-
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/background/top-container@2x.jpg");
-  }
-
-  @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat center;
-      background-size: cover;
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/background/promo-background-tablet@2x.jpg");
-      }
-    }
-  }
-
-  @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      background-position: 49% -7%;
-      background-size: auto;
-      margin-top: -130px;
-    }
-  }
+.promo .container {
+  padding: 0;
 }
 
 .promo__content {
-  padding: 210px 0 253px 95px;
+  padding: 0 0 283px 95px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 230px 0 250px 0;
+      padding: 0 45px 244px 45px;
     }
   }
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 235px 0 155px 0;
+      padding: 0 15px 155px 15px;
     }
   }
 }

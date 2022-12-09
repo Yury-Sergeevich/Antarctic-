@@ -641,6 +641,8 @@ button,
   width: 100%;
   z-index: 10;
   position: relative;
+  background: url("../img/background/top-container@1x.jpg") no-repeat;
+  background-size: cover;
 }
 
 .header .container {
@@ -650,7 +652,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 35px 20px;
+  padding: 35px 20px 175px 20px;
 }
 
 .logo {
@@ -794,20 +796,12 @@ button,
   transform: rotateZ(45deg);
 }
 
-.main {
-  margin-top: -73px;
-}
-
-.promo {
-  background: url("../img/background/top-container@1x.jpg") no-repeat center;
-  background-size: cover;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  margin-top: -70px;
+.promo .container {
+  padding: 0;
 }
 
 .promo__content {
-  padding: 210px 0 253px 95px;
+  padding: 0 0 283px 95px;
 }
 
 .promo__content h1 {
@@ -1663,8 +1657,13 @@ p {
 }
 
 @media (max-width: 1023px) and (max-width: 1023px) {
+  .header {
+    background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+
   .header .container {
-    padding: 30px 45px;
+    padding: 30px 45px 200px 45px;
   }
 
   .logo__icon {
@@ -1686,13 +1685,8 @@ p {
     font-weight: 500;
   }
 
-  .promo {
-    background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat center;
-    background-size: cover;
-  }
-
   .promo__content {
-    padding: 230px 0 250px 0;
+    padding: 0 45px 244px 45px;
   }
 
   .promo__content h1 {
@@ -1929,7 +1923,7 @@ p {
 }
 
 @media (max-width: 1023px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .promo {
+  .header {
     background-image: url("../img/background/promo-background-tablet@2x.jpg");
   }
 }
@@ -1968,7 +1962,7 @@ p {
 
 @media (max-width: 767px) and (max-width: 767px) {
   .header .container {
-    padding: 0;
+    padding: 0 15px 143px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1982,7 +1976,7 @@ p {
   }
 
   .logo {
-    padding: 20px 0 0 15px;
+    padding: 20px 0 0 0;
   }
 
   .logo__icon {
@@ -2036,14 +2030,8 @@ p {
     display: block;
   }
 
-  .promo {
-    background-position: 49% -7%;
-    background-size: auto;
-    margin-top: -130px;
-  }
-
   .promo__content {
-    padding: 235px 0 155px 0;
+    padding: 0 15px 155px 15px;
   }
 
   .promo__content h1 {
@@ -2273,6 +2261,12 @@ p {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/background/top-container@2x.jpg");
+  }
+}
+
 @media (hover: hover) and (hover: hover) {
   .nav__item a:hover:not(.focus-visible):hover:not(.focus-visible) {
     color: #00c8ff;
@@ -2297,12 +2291,6 @@ p {
 
   .social__item-icon:hover:not(.focus-visible):hover:not(.focus-visible) {
     fill: #00c8ff;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/background/top-container@2x.jpg");
   }
 }
 

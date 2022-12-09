@@ -2,22 +2,46 @@
   width: 100%;
   z-index: 10;
   position: relative;
+  background: url("../img/background/top-container@1x.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/top-container@2x.jpg");
+  }
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/background/promo-background-tablet@2x.jpg");
+      }
+    }
+  }
+
+  // @include vp-767 {
+  //   @media (max-width: ($vp-768 - 1px)) {
+  //     // background-position: 49% -7%;
+  //     // background-size: auto;
+  //   }
+  // }
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  padding: 35px 20px;
+  padding: 35px 20px 175px 20px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 30px 45px;
+      padding: 30px 45px 200px 45px;
     }
   }
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 0;
+      padding: 0 15px 143px;
       flex-direction: column;
     }
   }
