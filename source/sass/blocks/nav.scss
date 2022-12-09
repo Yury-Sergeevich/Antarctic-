@@ -99,9 +99,12 @@
 }
 
 .nav__item {
+  min-width: 80px;
+  max-width: 170px;
+
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      width: 100%;
+      max-width: 100%;
       padding: 10px 0 8px 10px;
     }
   }

@@ -80,6 +80,10 @@
 
 .form__check {
   margin: 0 0 30px 0;
+
+  &::-webkit-textfield-decoration-container {
+    background: #3aa5f6;
+  }
 }
 
 .form__check label {
