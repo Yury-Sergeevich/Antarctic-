@@ -1,0 +1,77 @@
+.menu-toggle {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display: none;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: block;
+    }
+  }
+}
+
+.menu-toggle__line {
+  height: 2px;
+  width: 24px;
+  background: $second-color;
+
+  position: absolute;
+  left: 13px;
+
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 4px;
+    height: 2px;
+    width: 24px;
+    background: $second-color;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+
+  &::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -4px;
+    height: 2px;
+    width: 24px;
+    background: $second-color;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+}
+
+.menu-toggle.open span {
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  background: transparent;
+}
+
+.menu-toggle.open span::before {
+  transition: top 0.25s, transform 0.25s 0.25s;
+  top: 0;
+  transform: rotateZ(-45deg);
+}
+
+.menu-toggle.open span::after {
+  transition: top 0.4s, transform 0.25s 0.25s;
+  top: 0;
+  transform: rotateZ(45deg);
+}
+
+.menu-toggle--nojs {
+  @mixin vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: none;
+    }
+  }
+}

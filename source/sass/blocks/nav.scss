@@ -1,3 +1,15 @@
+.nav {
+  z-index: 1;
+
+  @include vp-767 {
+    background: $second-color;
+
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 100%;
+    }
+  }
+}
+
 .nav__list {
   padding: 0;
   margin: 0;
@@ -7,23 +19,30 @@
   transition: 0.3s ease-in-out;
 
   @include vp-767 {
+    background: $second-color;
+
     @media (max-width: ($vp-768 - 1px)) {
-      // display: none;
-      transform: scale(0);
+      &--close {
+        display: none;
+      }
 
       &--open {
         position: absolute;
-        // display: block;
-        transform: scale(1);
-        transition: 0.3s ease-in-out;
+        display: block;
         width: 90%;
         top: 0;
         right: 0;
-        background: $second-color;
         z-index: 100;
         padding: 75px 30px 100vw 15px;
       }
     }
+  }
+}
+
+.nav__list-nojs {
+  @include vp-767 {
+    display: block;
+    padding: 20px 0 0 15px;
   }
 }
 
@@ -38,7 +57,7 @@
 }
 
 .nav__item a {
-  @include font (16px, 19.5px, 500);
+  @include font(16px, 19.5px, 500);
 
   padding: 13px 0;
   color: $second-color;
@@ -66,7 +85,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      @include font (18px, 22px 500);
+      @include font(18px, 22px 500);
 
       color: $primary-color;
     }

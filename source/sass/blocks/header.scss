@@ -17,7 +17,18 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 20px 15px;
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+}
+
+.header__menu-toggle {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      position: absolute;
+      right: 20px;
+      z-index: 10;
     }
   }
 }
