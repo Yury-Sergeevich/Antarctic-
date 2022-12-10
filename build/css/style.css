@@ -1313,6 +1313,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  border: none;
 }
 
 .address__map-marker {
@@ -1588,21 +1589,29 @@ p {
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
-  font-family: "Montserrat", "Arial", sans-serif;
   color: #f9fbfd;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 15px;
+  right: 15px;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+.modal__close-btn.focus-visible:focus.focus-visible:focus {
+  outline: 1px solid #006eff;
+}
+
+.modal__btn-icon {
+  fill: #f9fbfd;
 }
 
 .modal--responsive .modal__content {
@@ -2321,6 +2330,10 @@ p {
 
   .social__item-icon:hover:not(.focus-visible):hover:not(.focus-visible) {
     fill: #00c8ff;
+  }
+
+  .modal__btn-icon:hover:not(.focus-visible):hover:not(.focus-visible) {
+    fill: #006eff;
   }
 }
 

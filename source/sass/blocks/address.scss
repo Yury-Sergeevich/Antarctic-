@@ -59,6 +59,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  border: none;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
