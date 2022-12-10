@@ -436,6 +436,7 @@ html {
   line-height: 19.5px;
   font-weight: 500;
   color: #011c40;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -537,13 +538,7 @@ input[type=number] {
 
 select,
 textarea,
-input:matches([type=email],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url]) {
+input:matches([type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1226,10 +1221,6 @@ p {
   margin: 0 0 30px 0;
 }
 
-.form__check::-webkit-textfield-decoration-container {
-  background: #3aa5f6;
-}
-
 .form__check label {
   display: block;
   padding-left: 24px;
@@ -1587,9 +1578,18 @@ p {
 
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
+  width: 403px;
+  padding: 50px;
+  background: #011d41;
+}
+
+.modal__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #f9fbfd;
 }
 
 .modal__close-btn {

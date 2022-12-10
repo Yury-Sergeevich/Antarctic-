@@ -16,9 +16,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
 
   pointer-events: none;
 
@@ -59,15 +57,22 @@
   &__content {
     position: relative;
 
-    width: 600px;
-    padding: 40px;
+    width: 403px;
+    padding: 50px;
 
-    background-color: $color-default-white;
+    background: #011d41;
 
     @include vp-767 {
       width: 100%;
       padding: 20px;
     }
+  }
+
+  &__title {
+    @include font(18px, 150%, 500);
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: $second-color;
   }
 
   &__close-btn {

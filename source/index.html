@@ -20,16 +20,16 @@
           <nav class="nav" aria-label="Основная">
             <ul class="nav__list nav__list-nojs">
               <li class="nav__item">
-                <a href="#">Преимущества</a>
+                <a href="#advantages">Преимущества</a>
               </li>
               <li class="nav__item">
                 <a href="#">Направления</a>
               </li>
               <li class="nav__item">
-                <a href="#">Ближайшие круизы</a>
+                <a href="#cruises">Ближайшие круизы</a>
               </li>
               <li class="nav__item">
-                <a href="#">Контакты</a>
+                <a href="#address">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -61,7 +61,7 @@
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="container">
             <h2>Преимущества</h2>
             <ul class="advantages__list">
@@ -80,7 +80,7 @@
             </ul>
           </div>
         </section>
-        <section class="cruises">
+        <section class="cruises" id="cruises">
           <div class="container">
             <h2>Ближайшие круизы</h2>
             <ul class="cruises__list">
@@ -113,7 +113,7 @@
                           <p>от 11500 $</p>
                         </li>
                       </ul>
-                      <button class="cruises__item-button" type="button">Забронировать</button>
+                      <button class="cruises__item-button" type="button" data-open-modal="feedback">Забронировать</button>
                     </div>
                   </div>
               </li>
@@ -390,7 +390,7 @@
             </div>
           </div>
         </section>
-        <section class="address">
+        <section class="address" id="address">
           <h2 class="visually-hidden">Адрес компании</h2>
           <div class="container">
             <div class="address__wrapper">
@@ -467,7 +467,35 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
+          <p class="modal__title">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__input">
+              <label>
+                <input type="text" placeholder="Имя" name="name" required>
+                <span class="visually-hidden">Введите ваше имя</span>
+              </label>
+            </div>
+            <div class="form__input">
+              <label>
+                <input class="form__input-phone" type="tel" placeholder="Телефон" name="phone required">
+                <span class="visually-hidden">Введите ваш телефон</span>
+              </label>
+            </div>
+            <div class="form__input">
+              <label>
+                <input type="email" placeholder="Email" name="email" required>
+                <span class="visually-hidden">Введите ваше почту</span>
+              </label>
+            </div>
+            <div class="form__check" title="Для отправки формы подтвердите согласие">
+              <label>
+                <input type="checkbox" name="personal-data" checked required>
+                <span></span>
+                <span class="form__check-label">Я согласен на обработку моих персональных данных</span>
+              </label>
+            </div>
+            <button class="form__button-submit" type="submit">Оставить заявку</button>
+          </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
