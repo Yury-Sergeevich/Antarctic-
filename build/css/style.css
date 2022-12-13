@@ -909,7 +909,6 @@ p {
 .advantages__item {
   position: relative;
   background: #f9fbfd;
-  padding: 87px 31px 30px 30px;
 }
 
 .advantages__item--liner::before {
@@ -942,7 +941,7 @@ p {
   height: 32px;
 }
 
-.advantages__item h3 {
+.advantages__item-title {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   line-height: 150%;
@@ -950,7 +949,11 @@ p {
   margin: 0 0 20px 0;
 }
 
-.advantages__item p {
+.advantages__item-title--zadiac {
+  width: 150px;
+}
+
+.advantages__item-description {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 140%;
@@ -1925,18 +1928,18 @@ p {
     left: 20px;
   }
 
-  .advantages__item {
-    padding: 76px 16px 5px 20px;
+  .advantages__item--zadiac {
+    padding: 71px 16px 5px 20px;
   }
 
-  .advantages__item h3 {
+  .advantages__item-title {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 18px;
     line-height: 140%;
     font-weight: 500;
   }
 
-  .advantages__item p {
+  .advantages__item-description {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 14px;
     line-height: 140%;
@@ -2218,7 +2221,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 57px 15px 50px 15px;
+    padding: 58px 15px 50px 15px;
   }
 
   .about__content {
@@ -2248,8 +2251,12 @@ p {
     height: 156px;
   }
 
+  .advantages {
+    background-position: 0 36px;
+  }
+
   .advantages .container {
-    padding: 65px 15px;
+    padding: 91px 15px 66px 15px;
   }
 
   .advantages h2 {
@@ -2257,16 +2264,52 @@ p {
     font-size: 24px;
     line-height: 150%;
     font-weight: 600;
-    margin: 0 0 40px 0;
+    margin: 0 auto 31px;
     width: 196px;
   }
 
   .advantages__list {
     -ms-grid-columns: none;
     grid-template-columns: none;
-    -ms-grid-rows: (1fr)[3];
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (249px)[3];
+    grid-template-rows: repeat(3, 249px);
     row-gap: 30px;
+  }
+
+  .advantages__item--liner::before {
+    background-size: 75% 80%;
+  }
+
+  .advantages__item--liner {
+    padding: 70px 22px 0 20px;
+  }
+
+  .advantages__item--all-inclusive::before {
+    background-size: 65% 77%;
+  }
+
+  .advantages__item--all-inclusive {
+    padding: 70px 47px 0 20px;
+  }
+
+  .advantages__item--zadiac::before {
+    background-size: 80% 82%;
+  }
+
+  .advantages__item-title {
+    margin: 0 0 10px 0;
+  }
+
+  .advantages__item-title--liner {
+    width: 176px;
+  }
+
+  .advantages__item-title--all-inclusive {
+    width: 176px;
+  }
+
+  .advantages__item-description--liner {
+    margin: 0 0 9px 0;
   }
 
   .cruises h2 {

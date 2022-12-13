@@ -8,6 +8,12 @@
       background-size: cover;
     }
   }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      background-position: 0 36px;
+    }
+  }
 }
 
 .advantages .container {
@@ -21,7 +27,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 65px 15px;
+      padding: 91px 15px 66px 15px;
     }
   }
 }
@@ -36,7 +42,6 @@
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(26px, 150%, 600);
-
       width: 212px;
     }
   }
@@ -44,7 +49,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       @include font(24px, 150%, 600);
-      margin: 0 0 40px 0;
+      margin: 0 auto 31px;
       width: 196px;
     }
   }
@@ -67,7 +72,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       grid-template-columns: none;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 249px);
       row-gap: 30px;
     }
   }
@@ -76,7 +81,6 @@
 .advantages__item {
   position: relative;
   background: $second-color;
-  padding: 87px 31px 30px 30px;
 
   &--liner {
     &::before {
@@ -93,6 +97,18 @@
           top: 26px;
           left: 20px;
         }
+      }
+
+      @include vp-767 {
+        @media (max-width: ($vp-768 - 1px)) {
+          background-size: 75% 80%;
+        }
+      }
+    }
+
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        padding: 70px 22px 0 20px;
       }
     }
   }
@@ -113,6 +129,18 @@
           left: 20px;
         }
       }
+
+      @include vp-767 {
+        @media (max-width: ($vp-768 - 1px)) {
+          background-size: 65% 77%;
+        }
+      }
+    }
+
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        padding: 70px 47px 0 20px;
+      }
     }
   }
 
@@ -132,17 +160,23 @@
           left: 20px;
         }
       }
-    }
-  }
 
-  @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 76px 16px 5px 20px;
+      @include vp-767 {
+        @media (max-width: ($vp-768 - 1px)) {
+          background-size: 80% 82%;
+        }
+      }
+    }
+
+    @include vp-1023 {
+      @media (max-width: ($vp-1024 - 1px)) {
+        padding: 71px 16px 5px 20px;
+      }
     }
   }
 }
 
-.advantages__item h3 {
+.advantages__item-title {
   @include font(18px, 150%, 500);
   margin: 0 0 20px 0;
 
@@ -151,15 +185,49 @@
       @include font(18px, 140%, 500);
     }
   }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &--liner {
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        width: 176px;
+      }
+    }
+  }
+
+  &--all-inclusive {
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        width: 176px;
+      }
+    }
+  }
+
+  &--zadiac {
+    width: 150px;
+  }
 }
 
-.advantages__item p {
+.advantages__item-description {
   @include font(14px, 140%, 400);
   margin: 0 0 20px 0;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(14px, 140%, 400);
+    }
+  }
+
+  &--liner {
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        margin: 0 0 9px 0;
+      }
     }
   }
 }
