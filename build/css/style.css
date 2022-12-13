@@ -2221,7 +2221,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 58px 15px 50px 15px;
+    padding: 57px 15px 50px 15px;
   }
 
   .about__content {
@@ -2318,10 +2318,11 @@ p {
     line-height: 150%;
     font-weight: 600;
     width: 259px;
+    margin: 0 0 31px 0;
   }
 
   .cruises .container {
-    padding: 65px 25px;
+    padding: 57px 25px;
   }
 
   .cruises__list {
@@ -2336,9 +2337,21 @@ p {
     width: 270px;
   }
 
+  .cruises__item-front h3 {
+    bottom: 16px;
+    left: 25px;
+  }
+
   .cruises__item-front,
   .cruises__item-back {
     width: 270px;
+  }
+
+  .cruises__item-front--odysseus img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: -89px 0;
+    object-position: -89px 0;
   }
 
   .feedback .container {
