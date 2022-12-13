@@ -121,7 +121,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/leonor@1x.webp 1x, ./img/cards/leonor@2x.webp 2x">
-                      <img src="./img/cards/leonor@1x.jpg" srcset="./img/cards/leonor@2x.jpg 2x" width="260" height="386"  alt="Круиз Элайн">
+                      <img src="./img/cards/leonor@1x.jpg" srcset="./img/cards/leonor@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Элайн">
                     </picture>
                     <h3>Круиз “Элайн”</h3>
                   </div>
@@ -154,7 +154,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/atlantis@1x.webp 1x, ./img/cards/atlantis@2x.webp 2x">
-                      <img src="./img/cards/atlantis@1x.jpg" srcset="./img/cards/atlantis@2x.jpg 2x" width="260" height="386" alt="Круиз Атлантис">
+                      <img src="./img/cards/atlantis@1x.jpg" srcset="./img/cards/atlantis@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Атлантис">
                     </picture>
                     <h3>Круиз "Атлантис"</h3>
                   </div>
@@ -187,7 +187,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/odysseus@1x.webp, ./img/cards/odysseus@2x.webp 2x">
-                      <img src="./img/cards/odysseus@1x.jpg" srcset=".img/cards/odysseus@2x.jpg 2x" width="260" height="386" alt="Круиз Одиссей">
+                      <img src="./img/cards/odysseus@1x.jpg" srcset=".img/cards/odysseus@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Одиссей">
                     </picture>
                     <h3>Круиз "Одиссей"</h3>
                   </div>
@@ -220,7 +220,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/olympia@1x.webp, ./img/cards/olympia@2x.webp 2x">
-                      <img src="./img/cards/olympia@1x.jpg" srcset="./img/cards/olympia@2x.jpg 2x" width="260" height="386" alt="Круиз Олимпия">
+                      <img src="./img/cards/olympia@1x.jpg" srcset="./img/cards/olympia@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Олимпия">
                     </picture>
                     <h3>Круиз "Олимпия"</h3>
                   </div>
@@ -253,7 +253,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/aurora@1x.webp, ./img/cards/aurora@2x.webp 2x">
-                      <img src="./img/cards/aurora@1x.jpg" srcset="./img/cards/aurora@2x.jpg 2x" width="260" height="386" alt="Круиз Аврора">
+                      <img src="./img/cards/aurora@1x.jpg" srcset="./img/cards/aurora@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Аврора">
                     </picture>
                     <h3>Круиз “Аврора”</h3>
                   </div>
@@ -286,7 +286,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/leonor@1x.webp, ./img/cards/leonor@2x.webp 2x">
-                      <img src="./img/cards/leonor@1x.jpg" srcset="./img/cards/leonor@2x.jpg 2x" width="260" height="386" alt="Круиз Леонор">
+                      <img src="./img/cards/leonor@1x.jpg" srcset="./img/cards/leonor@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Леонор">
                     </picture>
                     <h3>Круиз "Леонор"</h3>
                   </div>
@@ -319,7 +319,7 @@
                   <div class="cruises__item-front">
                     <picture>
                       <source type="image/webp" srcset="./img/cards/minion@1x.webp, ./img/cards/minion@2x.webp 2x">
-                      <img src="./img/cards/minion@1x.jpg" srcset="./img/cards/minion@2x.jpg 2x" width="260" height="386" alt="Круиз Минион - 1">
+                      <img src="./img/cards/minion@1x.jpg" srcset="./img/cards/minion@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Минион - 1">
                     </picture>
                     <h3>Круиз "Минион - 1"</h3>
                   </div>
@@ -358,29 +358,29 @@
                 <h2>Раннее бронирование</h2>
                 <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
               </div>
-              <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <form class="feedback__form form" id="form" action="https://echo.htmlacademy.ru/" method="get">
                 <h2>Оставьте заявку и мы свяжемся с вами в ближайшее время</h2>
                 <div class="form__input">
                   <label>
-                    <input type="text" placeholder="Имя" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
                     <span class="visually-hidden">Введите ваше имя</span>
                   </label>
                 </div>
                 <div class="form__input">
                   <label>
-                    <input class="form__input-phone" type="tel" placeholder="Телефон" name="phone required">
+                    <input class="form__input-phone" id="tel" type="tel" placeholder="Телефон" name="phone required">
                     <span class="visually-hidden">Введите ваш телефон</span>
                   </label>
                 </div>
                 <div class="form__input">
                   <label>
-                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="email" name="email" id="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email" required>
                     <span class="visually-hidden">Введите ваше почту</span>
                   </label>
                 </div>
                 <div class="form__check" title="Для отправки формы подтвердите согласие">
                   <label>
-                    <input type="checkbox" name="personal-data" checked required>
+                    <input type="checkbox" name="personal-data" id="checkbox" checked required>
                     <span></span>
                     <span class="form__check-label">Я согласен на обработку моих персональных данных</span>
                   </label>
@@ -396,7 +396,7 @@
             <div class="address__wrapper">
               <div class="address__map-wrapper">
                 <picture>
-                  <img src="./img/content/map@1x.jpg" width="560" height="306" alt="Карта с адресом компании">
+                  <img src="./img/content/map@1x.jpg" width="560" height="306" loading="lazy" alt="Карта с адресом компании">
                 </picture>
                 <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b5c44445b913d3d5ede89af184817741a5e4b3732434962574e15200f5d6a49&amp;source=constructor" width="560" height="306"></iframe>
                 <svg class="address__map-marker" width="18" height="22">
