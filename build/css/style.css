@@ -1644,6 +1644,124 @@ p {
   pointer-events: auto;
 }
 
+.modal__form-input input {
+  width: 100%;
+  border: none;
+  padding: 11px 0 11px 16px;
+  outline: none;
+  color: #011c40;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.modal__form-input input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.modal__form-input input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.modal__form-input input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.modal__form-input input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.modal__form-input input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.modal__form-input input.focus-visible:focus.focus-visible:focus {
+  outline: 2px solid #42d2f6;
+}
+
+.modal__form-input input.focus-visible:active.focus-visible:active {
+  outline: 2px solid #53a9be;
+}
+
+.modal__form-input {
+  margin-bottom: 30px;
+}
+
+.modal__form-check {
+  margin: 0 0 30px 0;
+}
+
+.modal__form-check label {
+  display: block;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.modal__form-check input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.modal__form-check input:checked + span {
+  background: url("../img/svg/check.svg") no-repeat center, #f9fbfd;
+}
+
+.modal__form-check input:hover + span {
+  outline: 2px solid #3aa5f6;
+}
+
+.modal__form-check input:focus + span {
+  outline: 2px solid #68bdff;
+}
+
+.modal__form-check input:active + span {
+  outline: 2px solid #4a8dc1;
+}
+
+.modal__form-check span {
+  margin-left: -24px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.modal__check-label {
+  display: contents;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  top: 2px;
+  margin: 0;
+  color: #f9fbfd;
+}
+
+.modal__button-submit {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0 17px;
+  background: #f9fbfd;
+}
+
+.modal__button-submit.focus-visible:focus.focus-visible:focus {
+  outline: 2px solid #42d2f6;
+}
+
+.modal__button-submit:disabled {
+  background: #f9fbfd;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2295,6 +2413,14 @@ p {
   .social__item:not(:last-child) {
     margin-right: 22px;
   }
+
+  .modal__form-input {
+    margin-bottom: 20px;
+  }
+
+  .modal__check-label {
+    top: -2px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
@@ -2335,6 +2461,15 @@ p {
 
   .modal__btn-icon:hover:not(.focus-visible):hover:not(.focus-visible) {
     fill: #006eff;
+  }
+
+  .modal__form-input input:hover:not(.focus-visible):hover:not(.focus-visible) {
+    outline: 2px solid #6fe0fc;
+  }
+
+  .modal__button-submit:hover:not(.focus-visible):hover:not(.focus-visible) {
+    background: #6cbefd;
+    color: #f9fbfd;
   }
 }
 
