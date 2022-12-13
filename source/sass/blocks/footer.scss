@@ -25,6 +25,7 @@
 .footer__logo {
   display: block;
   margin-right: 40px;
+  cursor: default;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
