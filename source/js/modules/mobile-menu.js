@@ -1,8 +1,10 @@
 const toggleMenu = document.querySelector('.menu-toggle');
+// const toggleMenuNoJs = document.querySelector('.menu-toggle__no-js');
 const mobileMenu = document.querySelector('.nav__list');
 const logoMenu = document.querySelector('.logo__icon');
 
 mobileMenu.classList.add('nav__list--close');
+toggleMenu.classList.add('menu-toggle--no-js');
 
 function openMobMenu() {
   toggleMenu.addEventListener('click', function () {

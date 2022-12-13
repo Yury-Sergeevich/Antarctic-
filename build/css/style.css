@@ -745,8 +745,8 @@ button,
   content: "";
   left: 0;
   position: absolute;
-  top: 4px;
-  height: 2px;
+  top: 6px;
+  height: 1px;
   width: 24px;
   background: #f9fbfd;
   -webkit-transition: top 0.25s 0.25s, -webkit-transform 0.25s;
@@ -760,8 +760,8 @@ button,
   content: "";
   left: 0;
   position: absolute;
-  top: -4px;
-  height: 2px;
+  top: -6px;
+  height: 1px;
   width: 24px;
   background: #f9fbfd;
   -webkit-transition: top 0.25s 0.25s, -webkit-transform 0.25s;
@@ -803,10 +803,6 @@ button,
   -webkit-transform: rotateZ(45deg);
   -ms-transform: rotate(45deg);
   transform: rotateZ(45deg);
-}
-
-.promo .container {
-  padding: 0;
 }
 
 .promo__content {
@@ -1110,6 +1106,7 @@ p {
 }
 
 .cruises__item-button {
+  border: none;
   width: 100%;
   display: block;
   padding: 13px;
@@ -2097,7 +2094,7 @@ p {
 
   .nav__list-nojs {
     display: block;
-    padding: 20px 0 0 15px;
+    padding: 20px 0 100vw 15px;
   }
 
   .modal__wrapper {
@@ -2115,8 +2112,13 @@ p {
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
+  .header {
+    background-position: -210px -43px;
+    background-size: auto;
+  }
+
   .header .container {
-    padding: 0 0 143px;
+    padding: 0 0 130px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2125,7 +2127,8 @@ p {
 
   .header__menu-toggle {
     position: absolute;
-    right: 20px;
+    right: 4px;
+    top: 6px;
     z-index: 10;
   }
 
@@ -2180,12 +2183,16 @@ p {
     padding: 10px 0 8px 10px;
   }
 
-  .menu-toggle {
+  .menu-toggle--no-js {
     display: block;
   }
 
+  .promo__container {
+    padding: 0 0 88px 0;
+  }
+
   .promo__content {
-    padding: 0 15px 155px 15px;
+    padding: 0 15px 66px 15px;
   }
 
   .promo__content h1 {
@@ -2193,8 +2200,8 @@ p {
     font-size: 36px;
     line-height: 125%;
     font-weight: 700;
-    width: 82%;
-    margin: 0 0 25px 0;
+    width: 100%;
+    margin: 0 0 10px 0;
   }
 
   .promo__content p {
@@ -2211,7 +2218,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 60px 15px 50px 15px;
+    padding: 57px 15px 50px 15px;
   }
 
   .about__content {
@@ -2229,6 +2236,11 @@ p {
     font-size: 24px;
     line-height: 140%;
     font-weight: 600;
+    margin: 0 0 15px 0;
+  }
+
+  .about__content p {
+    margin: 0 0 24px 0;
   }
 
   .about__wrapper-image img {

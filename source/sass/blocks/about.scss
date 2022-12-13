@@ -16,7 +16,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       flex-direction: column;
-      padding: 60px 15px 50px 15px;
+      padding: 57px 15px 50px 15px;
     }
   }
 }
@@ -71,6 +71,7 @@ p {
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       @include font(24px, 140%, 600);
+      margin: 0 0 15px 0;
     }
   }
 }
@@ -81,6 +82,12 @@ p {
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(16px, 150%, 400);
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin: 0 0 24px 0;
     }
   }
 }

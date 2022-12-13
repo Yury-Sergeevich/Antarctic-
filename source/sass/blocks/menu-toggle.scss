@@ -9,9 +9,11 @@
   cursor: pointer;
   display: none;
 
-  @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: block;
+  &--no-js {
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1px)) {
+        display: block;
+      }
     }
   }
 }
@@ -31,8 +33,8 @@
     content: "";
     left: 0;
     position: absolute;
-    top: 4px;
-    height: 2px;
+    top: 6px;
+    height: 1px;
     width: 24px;
     background: $second-color;
     transition: transform 0.25s, top 0.25s 0.25s;
@@ -42,8 +44,8 @@
     content: "";
     left: 0;
     position: absolute;
-    top: -4px;
-    height: 2px;
+    top: -6px;
+    height: 1px;
     width: 24px;
     background: $second-color;
     transition: transform 0.25s, top 0.25s 0.25s;
@@ -66,12 +68,4 @@
   transition: top 0.4s, transform 0.25s 0.25s;
   top: 0;
   transform: rotateZ(45deg);
-}
-
-.menu-toggle--nojs {
-  @mixin vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: none;
-    }
-  }
 }
