@@ -682,6 +682,11 @@ button,
   transition: 0.3s ease-in-out;
 }
 
+.nav__item {
+  min-width: 80px;
+  max-width: 170px;
+}
+
 .nav__item:not(:last-child) {
   margin: 0 33px 0 0;
 }
@@ -702,11 +707,6 @@ button,
 
 .nav__item a.focus-visible:focus.focus-visible:focus {
   outline: 1px solid #0084a8;
-}
-
-.nav__item {
-  min-width: 80px;
-  max-width: 170px;
 }
 
 .menu-toggle {
@@ -1817,7 +1817,7 @@ p {
   }
 
   .header .container {
-    padding: 30px 45px 200px 45px;
+    padding: 30px 45px 213px 45px;
   }
 
   .logo__icon {
@@ -1826,6 +1826,17 @@ p {
     -webkit-transition: ease-in-out 0.4s;
     -o-transition: ease-in-out 0.4s;
     transition: ease-in-out 0.4s;
+  }
+
+  .nav {
+    max-width: 74%;
+    padding: 0 0 4px 0;
+  }
+
+  .nav__item {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
   }
 
   .nav__item:not(:last-child) {
@@ -1840,7 +1851,7 @@ p {
   }
 
   .promo__content {
-    padding: 0 45px 244px 45px;
+    padding: 0 45px 246px 45px;
   }
 
   .promo__content h1 {
@@ -1849,7 +1860,7 @@ p {
     line-height: 60.95px;
     font-weight: 700;
     width: 589px;
-    margin: 0 0 29px 0;
+    margin: 0 0 12px 0;
   }
 
   .promo__content p {
@@ -1862,12 +1873,12 @@ p {
   }
 
   .about .container {
-    padding: 100px 45px;
+    padding: 91px 45px 64px 45px;
   }
 
   .about__content {
     width: 48%;
-    margin-right: 25px;
+    margin-right: 31px;
   }
 
   .about__content h2,
@@ -1880,7 +1891,8 @@ p {
     font-size: 26px;
     line-height: 140%;
     font-weight: 600;
-    width: 205px;
+    width: 70.3%;
+    margin: 0 0 14px 0;
   }
 
   .about__content p {
@@ -1892,11 +1904,12 @@ p {
 
   .about__wrapper-image img {
     width: 324px;
-    height: 174px;
+    height: 183px;
+    padding: 9px 5px 0 0;
   }
 
   .advantages .container {
-    padding: 100px 45px;
+    padding: 90px 45px 100px 45px;
   }
 
   .advantages h2 {
@@ -1905,6 +1918,7 @@ p {
     line-height: 150%;
     font-weight: 600;
     width: 212px;
+    margin: 0 auto 49px;
   }
 
   .advantages__list {
@@ -1913,23 +1927,30 @@ p {
     column-gap: 30px;
   }
 
+  .advantages__item {
+    padding: 71px 15px 0 20px;
+  }
+
   .advantages__item--liner::before {
     top: 26px;
-    left: 20px;
+    left: 19px;
+    background-size: 82% 79%;
   }
 
   .advantages__item--all-inclusive::before {
-    top: 26px;
-    left: 20px;
+    top: 25px;
+    left: 19px;
+    background-size: 76% 87%;
   }
 
   .advantages__item--zadiac::before {
     top: 26px;
     left: 20px;
+    background-size: 80% 82%;
   }
 
   .advantages__item--zadiac {
-    padding: 71px 16px 0 20px;
+    padding: 71px 15px 0 19px;
   }
 
   .advantages__item-title {
@@ -1937,6 +1958,11 @@ p {
     font-size: 18px;
     line-height: 140%;
     font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+
+  .advantages__item-title--zadiac {
+    margin: 0 0 20px 0;
   }
 
   .advantages__item-description {
@@ -1944,6 +1970,7 @@ p {
     font-size: 14px;
     line-height: 140%;
     font-weight: 400;
+    margin: 0 0 22px 0;
   }
 
   .cruises h2 {
@@ -1952,11 +1979,12 @@ p {
     line-height: 150%;
     font-weight: 600;
     width: 281px;
+    margin: 0 auto 48px;
   }
 
   .cruises .container {
     grid-template-columns: repeat(auto-fit, 309px);
-    padding: 100px 60px;
+    padding: 91px 60px 100px 60px;
   }
 
   .cruises__list {
@@ -1972,6 +2000,11 @@ p {
 
   .cruises__item-front img {
     width: 309px;
+  }
+
+  .cruises__item-front h3 {
+    bottom: 27px;
+    left: 35px;
   }
 
   .cruises__item-front,
@@ -2087,10 +2120,6 @@ p {
     padding: 0 15px;
   }
 
-  .nav {
-    background: #f9fbfd;
-  }
-
   .nav__list {
     background: #f9fbfd;
   }
@@ -2116,7 +2145,7 @@ p {
 
 @media (max-width: 767px) and (max-width: 767px) {
   .header {
-    background-position: -210px -43px;
+    background-position: 47% -43px;
     background-size: auto;
   }
 
@@ -2156,7 +2185,12 @@ p {
   }
 
   .nav {
-    width: 100%;
+    background: #f9fbfd;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 90%;
+    max-width: 100%;
+    padding: 0;
   }
 
   .nav__list--close {
@@ -2173,17 +2207,17 @@ p {
     padding: 75px 30px 100vw 15px;
   }
 
+  .nav__item {
+    max-width: 100%;
+    padding: 10px 0 8px 10px;
+  }
+
   .nav__item a {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 18px;
     line-height: 22px 500;
     font-weight: 500;
     color: #011c40;
-  }
-
-  .nav__item {
-    max-width: 100%;
-    padding: 10px 0 8px 10px;
   }
 
   .menu-toggle--no-js {
@@ -2249,6 +2283,7 @@ p {
   .about__wrapper-image img {
     width: 290;
     height: 156px;
+    padding: 0;
   }
 
   .advantages {

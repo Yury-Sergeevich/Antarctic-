@@ -9,7 +9,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 100px 45px;
+      padding: 91px 45px 64px 45px;
     }
   }
 
@@ -29,7 +29,7 @@
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       width: 48%;
-      margin-right: 25px;
+      margin-right: 31px;
     }
   }
 
@@ -64,7 +64,8 @@ p {
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(26px, 140%, 600);
-      width: 205px;
+      width: 70.3%;
+      margin: 0 0 14px 0;
     }
   }
 
@@ -96,7 +97,8 @@ p {
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       width: 324px;
-      height: 174px;
+      height: 183px;
+      padding: 9px 5px 0 0;
     }
   }
 
@@ -104,6 +106,7 @@ p {
     @media (max-width: ($vp-768 - 1px)) {
       width: 290;
       height: 156px;
+      padding: 0;
     }
   }
 }

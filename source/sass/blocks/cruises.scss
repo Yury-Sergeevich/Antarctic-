@@ -8,6 +8,7 @@
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(26px, 150%, 600);
       width: 281px;
+      margin: 0 auto 48px;
     }
   }
 
@@ -26,7 +27,7 @@
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       grid-template-columns: repeat(auto-fit, 309px);
-      padding: 100px 60px;
+      padding: 91px 60px 100px 60px;
     }
   }
 
@@ -114,6 +115,13 @@
   bottom: 30px;
   left: 30px;
   color: $second-color;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      bottom: 27px;
+      left: 35px;
+    }
+  }
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {

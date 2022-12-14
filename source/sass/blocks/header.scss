@@ -22,7 +22,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      background-position: -210px -43px;
+      background-position: 47% -43px;
       background-size: auto;
     }
   }
@@ -35,7 +35,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 30px 45px 200px 45px;
+      padding: 30px 45px 213px 45px;
     }
   }
 
