@@ -6,7 +6,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 40px 30px;
+      padding: 36px 30px 40px 30px;
       width: 100%;
     }
   }
@@ -22,6 +22,7 @@
     @media (max-width: ($vp-768 - 1px)) {
       @include font(18px, 140%, 500);
       text-align: center;
+      margin: 0 0 27px 0;
     }
   }
 }
@@ -80,6 +81,12 @@
 
 .form__check {
   margin: 0 0 30px 0;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin: 0 0 12px 0;
+    }
+  }
 }
 
 .form__check label {
@@ -115,6 +122,13 @@
   width: 18px;
   height: 18px;
   background-color: $second-color;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .form__check-label {
@@ -130,6 +144,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       top: -2px;
+      display: block;
     }
   }
 }
@@ -143,6 +158,13 @@
   width: 100%;
   padding: 15px 0 17px;
   background: $second-color;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      padding: 11px 0 10px;
+      margin: 51px 0 0 0;
+    }
+  }
 
   @include hover {
     @media (hover: hover) {

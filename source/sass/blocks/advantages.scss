@@ -72,7 +72,7 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       grid-template-columns: none;
-      grid-template-rows: repeat(3, 249px);
+      grid-template-rows: repeat(3, auto);
       row-gap: 30px;
     }
   }
@@ -108,7 +108,7 @@
 
     @include vp-767 {
       @media (max-width: ($vp-768 - 1px)) {
-        padding: 70px 22px 0 20px;
+        padding: 70px 22px 11px 20px;
       }
     }
   }
@@ -170,7 +170,7 @@
 
     @include vp-1023 {
       @media (max-width: ($vp-1024 - 1px)) {
-        padding: 71px 16px 5px 20px;
+        padding: 71px 16px 0 20px;
       }
     }
   }
@@ -209,7 +209,7 @@
   }
 
   &--zadiac {
-    width: 150px;
+    width: 151px;
   }
 }
 
