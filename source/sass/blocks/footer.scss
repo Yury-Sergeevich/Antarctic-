@@ -9,7 +9,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 50px 45px;
+      padding: 42px 45px 46px 45px;
     }
   }
 
@@ -24,6 +24,7 @@
 
 .footer__logo {
   display: block;
+  outline: none;
   margin-right: 40px;
   cursor: default;
 
@@ -36,6 +37,12 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       margin: 0 0 24px 0;
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 2px solid #0092bb;
     }
   }
 }

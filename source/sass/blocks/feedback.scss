@@ -7,9 +7,20 @@
     background-size: cover;
   }
 
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      background-position: 87% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/background/form-bkg.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      background-position: -484px -46px;
+      background-position: 54.5% -46px;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/background/form-bkg.jpg") no-repeat;
@@ -24,7 +35,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 100px 45px;
+      padding: 89px 45px 0 45px;
     }
   }
 
@@ -61,7 +72,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      width: 257px;
+      width: 88.7%;
     }
   }
 }
@@ -75,7 +86,7 @@
     @media (max-width: ($vp-1024 - 1px)) {
       @include font(34px, 150%, 700);
 
-      margin: 0 0 25px 0;
+      margin: 0 0 4px 0;
     }
   }
 
@@ -88,6 +99,20 @@
   }
 }
 
+.feedback__content-title-br {
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: block;
+    }
+  }
+}
+
 .feedback__content p {
   @include font(18px, 150%, 400);
 
@@ -96,7 +121,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 auto 60px;
+      margin: 0 auto 52px;
     }
   }
 
