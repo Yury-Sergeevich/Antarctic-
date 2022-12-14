@@ -692,13 +692,40 @@ button,
 }
 
 .nav__item a {
+  position: relative;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 500;
-  padding: 13px 0;
+  padding: 13px 0 0 0;
   color: #f9fbfd;
   outline: none;
+}
+
+.nav__item a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #005b74;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nav__item a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0092bb;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .nav__item a.focus-visible:active.focus-visible:active {
@@ -1445,6 +1472,7 @@ p {
 }
 
 .footer__nav-item a {
+  position: relative;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1454,6 +1482,32 @@ p {
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+}
+
+.footer__nav-item a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #005b74;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.footer__nav-item a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0092bb;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .footer__nav-item a.focus-visible:active.focus-visible:active {
@@ -1499,10 +1553,6 @@ p {
 
 .social__item-icon {
   fill: #f9fbfd;
-}
-
-.social__item-icon.focus-visible:focus.focus-visible:focus {
-  outline: 2px solid #0092bb;
 }
 
 .btn {
@@ -2653,10 +2703,6 @@ p {
     fill: #00c8ff;
   }
 
-  .nav__item a:hover:not(.focus-visible):hover:not(.focus-visible) {
-    color: #00c8ff;
-  }
-
   .form__input input:hover:not(.focus-visible):hover:not(.focus-visible) {
     outline: 2px solid #6fe0fc;
   }
@@ -2668,10 +2714,6 @@ p {
 
   .address__info a:hover:not(.focus-visible):hover:not(.focus-visible) {
     color: #008cff;
-  }
-
-  .footer__nav-item a:hover:not(.focus-visible):hover:not(.focus-visible) {
-    color: #00c8ff;
   }
 
   .social__item-icon:hover:not(.focus-visible):hover:not(.focus-visible) {

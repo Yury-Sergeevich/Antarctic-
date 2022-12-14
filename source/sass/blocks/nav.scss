@@ -84,18 +84,34 @@
 }
 
 .nav__item a {
+  position: relative;
+
   @include font(16px, 19.5px, 500);
 
-  padding: 13px 0;
+  padding: 13px 0 0 0;
   color: $second-color;
   outline: none;
 
-  @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        color: #00c8ff;
-      }
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #005b74;
+    transition: width 0.5s;
+  }
+
+  &:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #0092bb;
+    transition: width 0.5s;
   }
 
   @include active {

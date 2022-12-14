@@ -39,7 +39,7 @@
 
 .social__item a {
   cursor: pointer;
-  // outline: none;
+
   @include focus {
     &.focus-visible:focus {
       outline: 2px solid #0092bb;
@@ -78,12 +78,6 @@
       &:hover:not(.focus-visible) {
         fill: #00c8ff;
       }
-    }
-  }
-
-  @include focus {
-    &.focus-visible:focus {
-      outline: 2px solid #0092bb;
     }
   }
 }
