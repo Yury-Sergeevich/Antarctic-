@@ -1,6 +1,6 @@
 .cruises h2 {
   @include font(28px, 150%, 600);
-  margin: 0 auto 60px;
+  margin: 0 auto 49px;
   text-align: center;
   width: 302px;
 
@@ -22,7 +22,7 @@
 }
 
 .cruises .container {
-  padding: 95px 30px 120px 30px;
+  padding: 86px 30px 120px 30px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
@@ -44,12 +44,13 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 260px);
-  gap: 30px 30px;
+  gap: 30px 32px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       grid-template-columns: repeat(auto-fit, 309px);
       justify-content: center;
+      gap: 30px;
     }
   }
 
@@ -112,8 +113,8 @@
   @include font(18px, 150%, 500);
   margin: 0;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 22px;
+  left: 31px;
   color: $second-color;
 
   @include vp-1023 {

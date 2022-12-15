@@ -31,7 +31,7 @@
 .header .container {
   display: flex;
   align-items: center;
-  padding: 35px 20px 175px 20px;
+  padding: 35px 20px 192px 20px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {

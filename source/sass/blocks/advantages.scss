@@ -17,7 +17,7 @@
 }
 
 .advantages .container {
-  padding: 120px 20px;
+  padding: 110px 20px 119px 20px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
@@ -37,7 +37,7 @@
 
   text-align: center;
   width: 228px;
-  margin: 0 auto 60px;
+  margin: 0 auto 49px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
@@ -82,6 +82,7 @@
 .advantages__item {
   position: relative;
   background: $second-color;
+  padding: 81px 42px 26px 30px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
@@ -90,6 +91,8 @@
   }
 
   &--liner {
+    padding: 81px 42px 0 30px;
+
     &::before {
       content: "";
       position: absolute;
@@ -178,6 +181,8 @@
       }
     }
 
+    padding: 81px 32px 0 30px;
+
     @include vp-1023 {
       @media (max-width: ($vp-1024 - 1px)) {
         padding: 71px 15px 0 19px;
@@ -188,7 +193,6 @@
 
 .advantages__item-title {
   @include font(18px, 150%, 500);
-  margin: 0 0 20px 0;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
@@ -204,6 +208,8 @@
   }
 
   &--liner {
+    margin: 0 0 10px 0;
+
     @include vp-767 {
       @media (max-width: ($vp-768 - 1px)) {
         width: 176px;
@@ -212,6 +218,9 @@
   }
 
   &--all-inclusive {
+    width: 100%;
+    margin: 0 0 9px 0;
+
     @include vp-767 {
       @media (max-width: ($vp-768 - 1px)) {
         width: 176px;
@@ -220,7 +229,8 @@
   }
 
   &--zadiac {
-    width: 151px;
+    width: 100%;
+    margin: 0 0 10px 0;
 
     @include vp-1023 {
       @media (max-width: ($vp-1024 - 1px)) {
@@ -230,8 +240,19 @@
   }
 }
 
+.advantages__item-title-br {
+  display: none;
+
+  @include vp-1023 {
+    @media (max-width: ($vp-1024 - 1px)) {
+      display: block;
+    }
+  }
+}
+
 .advantages__item-description {
   @include font(14px, 140%, 400);
+
   margin: 0 0 20px 0;
 
   @include vp-1023 {
@@ -247,5 +268,9 @@
         margin: 0 0 9px 0;
       }
     }
+  }
+
+  &--all-inclusive {
+    width: 100%;
   }
 }

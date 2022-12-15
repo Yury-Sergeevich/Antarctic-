@@ -24,12 +24,13 @@
 .about__content {
   width: 512px;
   flex-direction: column;
-  align-self: center;
+  padding: 56px 0 0 0;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       width: 48%;
       margin-right: 31px;
+      padding: 0;
     }
   }
 
@@ -60,6 +61,7 @@ p {
 
 .about__content h2 {
   @include font(28px, 150%, 600);
+  margin: 0 0 24px 0;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
