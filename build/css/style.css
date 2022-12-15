@@ -2044,6 +2044,14 @@ p {
     background-size: auto;
   }
 
+  .header__wrapper {
+    background: transparent;
+  }
+
+  .header__wrapper--open {
+    background: rgba(0, 43, 102, 0.5);
+  }
+
   .header .container {
     padding: 0 0 130px;
     -webkit-box-orient: vertical;

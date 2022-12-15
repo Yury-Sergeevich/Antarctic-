@@ -28,6 +28,18 @@
   }
 }
 
+.header__wrapper {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      background: transparent;
+
+      &--open {
+        background: rgba(0, 43, 102, 0.5);
+      }
+    }
+  }
+}
+
 .header .container {
   display: flex;
   align-items: center;
