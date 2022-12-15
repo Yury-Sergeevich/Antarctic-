@@ -13,6 +13,7 @@ function openMobMenu() {
       logoMenu.classList.remove('logo__icon--open');
     } else {
       toggleMenu.classList.add('open');
+      toggleMenu.classList.add('black');
       mobileMenu.classList.add('nav__list--open');
       logoMenu.classList.add('logo__icon--open');
     }

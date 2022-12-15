@@ -58,14 +58,16 @@
   background: transparent;
 }
 
-.menu-toggle.open span::before {
+.menu-toggle.open.black span::before {
   transition: top 0.25s, transform 0.25s 0.25s;
   top: 0;
   transform: rotateZ(-45deg);
+  background: $primary-color;
 }
 
-.menu-toggle.open span::after {
+.menu-toggle.open.black span::after {
   transition: top 0.4s, transform 0.25s 0.25s;
   top: 0;
   transform: rotateZ(45deg);
+  background: $primary-color;
 }

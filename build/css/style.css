@@ -808,7 +808,7 @@ button,
   background: transparent;
 }
 
-.menu-toggle.open span::before {
+.menu-toggle.open.black span::before {
   -webkit-transition: top 0.25s, -webkit-transform 0.25s 0.25s;
   transition: top 0.25s, -webkit-transform 0.25s 0.25s;
   -o-transition: top 0.25s, transform 0.25s 0.25s;
@@ -818,9 +818,10 @@ button,
   -webkit-transform: rotateZ(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotateZ(-45deg);
+  background: #011c40;
 }
 
-.menu-toggle.open span::after {
+.menu-toggle.open.black span::after {
   -webkit-transition: top 0.4s, -webkit-transform 0.25s 0.25s;
   transition: top 0.4s, -webkit-transform 0.25s 0.25s;
   -o-transition: top 0.4s, transform 0.25s 0.25s;
@@ -830,6 +831,7 @@ button,
   -webkit-transform: rotateZ(45deg);
   -ms-transform: rotate(45deg);
   transform: rotateZ(45deg);
+  background: #011c40;
 }
 
 .promo__content {
@@ -1800,7 +1802,7 @@ p {
   }
 
   .advantages__item--zadiac {
-    padding: 71px 15px 0 19px;
+    padding: 71px 20px 0 19px;
   }
 
   .advantages__item-title {
@@ -1901,6 +1903,7 @@ p {
   }
 
   .feedback__content p {
+    width: 86%;
     margin: 0 auto 52px;
   }
 
@@ -2072,7 +2075,7 @@ p {
   .logo__icon--open {
     fill: #011c40;
     position: absolute;
-    left: 50px;
+    left: 14%;
     z-index: 2;
   }
 
@@ -2235,6 +2238,10 @@ p {
     width: 176px;
   }
 
+  .advantages__item-title--zadiac {
+    width: 63%;
+  }
+
   .advantages__item-description--liner {
     margin: 0 0 9px 0;
   }
@@ -2380,6 +2387,10 @@ p {
 
   .address__info-wrapper {
     padding: 0;
+  }
+
+  .address__info {
+    width: 100%;
   }
 
   .address__info-wrapper p {

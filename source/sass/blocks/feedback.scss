@@ -120,6 +120,7 @@
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
+      width: 86%;
       margin: 0 auto 52px;
     }
   }
