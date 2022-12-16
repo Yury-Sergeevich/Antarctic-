@@ -16,7 +16,7 @@
     @media (max-width: ($vp-768 - 1px)) {
       @include font(24px, 150%, 600);
       width: 270px;
-      margin: 0 0 31px 0;
+      margin: 0 auto 31px;
     }
   }
 }
@@ -230,5 +230,8 @@
   width: 100%;
   display: block;
   padding: 13px;
+  color: $primary-color;
+  text-align: center;
+  background-color: $second-color;
   cursor: pointer;
 }

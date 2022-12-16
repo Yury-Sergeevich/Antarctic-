@@ -53,7 +53,7 @@
   @include font(20px, 24px, 400);
 
   color: $second-color;
-  margin: 0 0 30px 103px;
+  margin: 0 0 30px 0;
   width: 430px;
 
   @include vp-1023 {
