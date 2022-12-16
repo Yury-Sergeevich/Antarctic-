@@ -2107,7 +2107,7 @@ p {
     top: 0;
     right: 0;
     z-index: 100;
-    padding: 75px 30px 100vw 15px;
+    padding: 75px 30px 100vh 15px;
   }
 
   .nav__item {
