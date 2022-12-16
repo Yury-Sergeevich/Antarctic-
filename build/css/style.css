@@ -815,6 +815,8 @@ button,
   transition: top 0.25s, transform 0.25s 0.25s;
   transition: top 0.25s, transform 0.25s 0.25s, -webkit-transform 0.25s 0.25s;
   top: 0;
+  height: 2px;
+  width: 20px;
   -webkit-transform: rotateZ(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotateZ(-45deg);
@@ -828,6 +830,8 @@ button,
   transition: top 0.4s, transform 0.25s 0.25s;
   transition: top 0.4s, transform 0.25s 0.25s, -webkit-transform 0.25s 0.25s;
   top: 0;
+  height: 2px;
+  width: 20px;
   -webkit-transform: rotateZ(45deg);
   -ms-transform: rotate(45deg);
   transform: rotateZ(45deg);
@@ -2034,7 +2038,7 @@ p {
 
   .nav__list-nojs {
     display: block;
-    padding: 20px 0 100vw 15px;
+    padding: 20px 0 100vh 15px;
   }
 }
 
@@ -2050,6 +2054,12 @@ p {
 
   .header__wrapper--open {
     background: rgba(0, 43, 102, 0.5);
+    height: 100vh;
+  }
+
+  .header__wrapper--no-js {
+    background: rgba(0, 43, 102, 0.5);
+    height: 100vh;
   }
 
   .header .container {
@@ -2083,7 +2093,7 @@ p {
   .logo__icon--open {
     fill: #011c40;
     position: absolute;
-    left: 14%;
+    left: 15.5%;
     z-index: 2;
   }
 
@@ -2103,16 +2113,20 @@ p {
   .nav__list--open {
     position: absolute;
     display: block;
-    width: 90%;
+    width: 89%;
     top: 0;
     right: 0;
     z-index: 100;
-    padding: 75px 30px 100vh 15px;
+    padding: 77px 30px 100vh 15px;
   }
 
   .nav__item {
     max-width: 100%;
     padding: 10px 0 8px 10px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin: 0 23px 12px 0;
   }
 
   .nav__item a {

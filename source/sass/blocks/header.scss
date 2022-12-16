@@ -35,6 +35,12 @@
 
       &--open {
         background: rgba(0, 43, 102, 0.5);
+        height: 100vh;
+      }
+
+      &--no-js {
+        background: rgba(0, 43, 102, 0.5);
+        height: 100vh;
       }
     }
   }

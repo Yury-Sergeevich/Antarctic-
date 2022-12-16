@@ -38,11 +38,11 @@
       &--open {
         position: absolute;
         display: block;
-        width: 90%;
+        width: 89%;
         top: 0;
         right: 0;
         z-index: 100;
-        padding: 75px 30px 100vh 15px;
+        padding: 77px 30px 100vh 15px;
       }
     }
   }
@@ -69,7 +69,7 @@
 .nav__list-nojs {
   @include vp-767 {
     display: block;
-    padding: 20px 0 100vw 15px;
+    padding: 20px 0 100vh 15px;
   }
 }
 
@@ -79,6 +79,12 @@
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       margin: 0 23px 0 0;
+    }
+  }
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      margin: 0 23px 12px 0;
     }
   }
 }
