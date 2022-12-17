@@ -51,17 +51,17 @@
 .header .container {
   display: flex;
   align-items: center;
-  padding: 35px 20px 192px 20px;
+  padding: 35px 20px 35px 20px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 30px 45px 213px 45px;
+      padding: 30px 45px 30px 45px;
     }
   }
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 0 0 130px;
+      padding: 0;
       flex-direction: column;
     }
   }
