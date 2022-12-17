@@ -1,5 +1,7 @@
 .advantages {
-  background: url("../img/background/advantages-backg@1x.jpg") no-repeat;
+  background: url("../img/background/advantages-backg@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #d7ebff;
   background-size: cover;
 
   @mixin retina {
@@ -191,6 +193,16 @@
   }
 }
 
+.advantages__item > .advantages__item-title {
+  margin: 0 0 10px 0;
+
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 176px;
+    }
+  }
+}
+
 .advantages__item-title {
   @include font(18px, 150%, 500);
 
@@ -204,16 +216,6 @@
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
       margin: 0 0 10px 0;
-    }
-  }
-
-  &--liner {
-    margin: 0 0 10px 0;
-
-    @include vp-767 {
-      @media (max-width: ($vp-768 - 1px)) {
-        width: 176px;
-      }
     }
   }
 

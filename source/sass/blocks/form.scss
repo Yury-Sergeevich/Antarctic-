@@ -106,22 +106,22 @@
 .form__check input {
   appearance: none;
   position: absolute;
+}
 
-  &:checked + span {
-    background: url("../img/svg/check.svg") no-repeat center, $second-color;
-  }
+.form__check input:checked + span {
+  background: url("../img/svg/check.svg") no-repeat center, $second-color;
+}
 
-  &:hover + span {
-    outline: 2px solid #3aa5f6;
-  }
+.form__check input:hover + span {
+  outline: 2px solid #3aa5f6;
+}
 
-  &:focus + span {
-    outline: 2px solid #68bdff;
-  }
+.form__check input:focus + span {
+  outline: 2px solid #68bdff;
+}
 
-  &:active + span {
-    outline: 2px solid #4a8dc1;
-  }
+.form__check input:active + span {
+  outline: 2px solid #4a8dc1;
 }
 
 .form__check span {

@@ -636,7 +636,9 @@ button,
   width: 100%;
   z-index: 10;
   position: relative;
-  background: url("../img/background/top-container@1x.jpg") no-repeat;
+  background-image: url("../img/background/top-container@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #3873bc;
   background-size: cover;
 }
 
@@ -912,7 +914,9 @@ p {
 }
 
 .advantages {
-  background: url("../img/background/advantages-backg@1x.jpg") no-repeat;
+  background: url("../img/background/advantages-backg@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #d7ebff;
   background-size: cover;
 }
 
@@ -987,15 +991,15 @@ p {
   height: 32px;
 }
 
+.advantages__item > .advantages__item-title {
+  margin: 0 0 10px 0;
+}
+
 .advantages__item-title {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
-}
-
-.advantages__item-title--liner {
-  margin: 0 0 10px 0;
 }
 
 .advantages__item-title--all-inclusive {
@@ -1183,7 +1187,9 @@ p {
 }
 
 .feedback {
-  background: url("../img/background/form-bkg.jpg") no-repeat;
+  background-image: url("../img/background/form-bkg.jpg");
+  background-repeat: no-repeat;
+  background-color: #afd0fd;
   background-size: cover;
   background-position: 0 50%;
 }
@@ -1443,6 +1449,7 @@ p {
   font-weight: 400;
   cursor: pointer;
   display: inline-block;
+  vertical-align: baseline;
   font-style: normal;
   color: #011c40;
   padding-left: 28px;
@@ -2261,12 +2268,12 @@ p {
     background-size: 80% 82%;
   }
 
-  .advantages__item-title {
-    margin: 0 0 10px 0;
+  .advantages__item > .advantages__item-title {
+    width: 176px;
   }
 
-  .advantages__item-title--liner {
-    width: 176px;
+  .advantages__item-title {
+    margin: 0 0 10px 0;
   }
 
   .advantages__item-title--all-inclusive {

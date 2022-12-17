@@ -2,7 +2,9 @@
   width: 100%;
   z-index: 10;
   position: relative;
-  background: url("../img/background/top-container@1x.jpg") no-repeat;
+  background-image: url("../img/background/top-container@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #3873bc;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {

@@ -1864,7 +1864,7 @@ const swiper = () => {
             return true;
           })
           .css({
-            [key]: `${spaceBetween}px`,
+            key: `${spaceBetween}px`,
           });
       }
 
@@ -9102,7 +9102,7 @@ const swiper = () => {
           column = slideIndexInGroup - row * columnsInGroup + groupIndex * slidesPerGroup;
           newSlideOrderIndex = column + (row * slidesNumberEvenToRows) / rows;
           slide.css({
-            '-webkit-order': newSlideOrderIndex,
+            'webkitOrder': newSlideOrderIndex,
             order: newSlideOrderIndex,
           });
         } else if (fill === 'column') {
@@ -9364,8 +9364,8 @@ const swiper = () => {
     function effectTarget(effectParams, $slideEl) {
       if (effectParams.transformEl) {
         return $slideEl.find(effectParams.transformEl).css({
-          'backface-visibility': 'hidden',
-          '-webkit-backface-visibility': 'hidden',
+          'backfaceVisibility': 'hidden',
+          'webkitBackfaceVisibility': 'hidden',
         });
       }
 
@@ -9592,8 +9592,8 @@ const swiper = () => {
         }
 
         $wrapperEl.css({
-          '-webkit-transform-origin': `50% 50% -${swiperSize / 2}px`,
-          'transform-origin': `50% 50% -${swiperSize / 2}px`,
+          'webkitTransformOrigin': `50% 50% -${swiperSize / 2}px`,
+          'transformOrigin': `50% 50% -${swiperSize / 2}px`,
         });
 
         if (params.shadow) {
