@@ -12,6 +12,28 @@
   align-items: center;
 }
 
+.nav__overlay-nojs {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      flex-direction: column;
+    }
+  }
+}
+
+.nav__overlay-nojs .nav__list {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: block;
+      flex-direction: column;
+      background-color: $second-color;
+      width: 89%;
+      align-self: flex-end;
+      height: 100vh;
+      padding: 15px 15px;
+    }
+  }
+}
+
 .nav--open .nav__overlay {
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
@@ -69,6 +91,8 @@
 }
 
 .nav__item-link {
+  position: relative;
+
   @include font(16px, 20px, 500);
 
   @include vp-1023 {
@@ -88,6 +112,34 @@
   }
 
   color: $second-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #005b74;
+    transition: width 0.5s;
+  }
+
+  &:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #0092bb;
+    transition: width 0.5s;
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 1px solid #00c8ff;
+    }
+  }
 }
 
 .nav__list-reset {

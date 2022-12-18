@@ -71,6 +71,9 @@
   }
 
   &:hover > .cruises__item-back {
+    &:focus-within {
+      outline: 2px solid #0084a8;
+    }
     transform: perspective(600px) rotateY(0deg);
   }
 

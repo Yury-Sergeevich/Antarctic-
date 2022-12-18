@@ -703,11 +703,42 @@ button,
 }
 
 .nav__item-link {
+  position: relative;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
   color: #f9fbfd;
+}
+
+.nav__item-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #005b74;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nav__item-link:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0092bb;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nav__item-link.focus-visible:focus.focus-visible:focus {
+  outline: 1px solid #00c8ff;
 }
 
 .nav__list-reset {
@@ -1038,6 +1069,10 @@ p {
 .cruises__item:hover > .cruises__item-back {
   -webkit-transform: perspective(600px) rotateY(0deg);
   transform: perspective(600px) rotateY(0deg);
+}
+
+.cruises__item:hover > .cruises__item-back:focus-within {
+  outline: 2px solid #0084a8;
 }
 
 .cruises__item:focus-within {
@@ -2043,6 +2078,27 @@ p {
     width: 42px;
     height: 22px;
     fill: #011c40;
+  }
+
+  .nav__overlay-nojs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .nav__overlay-nojs .nav__list {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #f9fbfd;
+    width: 89%;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    height: 100vh;
+    padding: 15px 15px;
   }
 
   .nav--open .nav__overlay {

@@ -4,8 +4,10 @@ const nav = document.querySelector('.nav');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelectorAll('.nav__item-link');
 const closeOverlay = document.querySelector('.nav__overlay');
+const noJsMenu = document.querySelector('.nav__overlay-nojs');
 const scrollLock = new ScrollLock();
 
+noJsMenu.classList.remove('nav__overlay-nojs');
 
 function controlsScrollElements() {
   navLinks.forEach((item) => {
