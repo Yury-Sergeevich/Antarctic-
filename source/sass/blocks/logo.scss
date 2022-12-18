@@ -1,6 +1,7 @@
 .logo {
   display: block;
   cursor: default;
+  margin-right: 83px;
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1)) {

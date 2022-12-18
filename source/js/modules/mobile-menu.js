@@ -3,7 +3,9 @@ import {ScrollLock} from '../utils/scroll-lock';
 const nav = document.querySelector('.nav');
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelectorAll('.nav__item-link');
+const closeOverlay = document.querySelector('.nav__overlay');
 const scrollLock = new ScrollLock();
+
 
 function controlsScrollElements() {
   navLinks.forEach((item) => {
@@ -15,6 +17,16 @@ function controlsScrollElements() {
     });
   });
 }
+
+closeOverlay.addEventListener('click', (evt) => {
+  evt.stopPropagation();
+  let target = evt.target;
+  if (target === closeOverlay) {
+    if (nav.classList.contains('nav--open')) {
+      nav.classList.remove('nav--open');
+    }
+  }
+});
 
 function closedMenuEsc(evt) {
   if (evt.keyCode === 27) {
@@ -30,8 +42,9 @@ function activateMobileMenu() {
       evt.preventDefault();
       nav.classList.toggle('nav--open');
       if (nav.classList.contains('nav--open')) {
-        document.addEventListener('keydown', closedMenuEsc, controlsScrollElements);
+        document.addEventListener('keydown', closedMenuEsc);
         scrollLock.disableScrolling();
+        controlsScrollElements();
       } else {
         document.addEventListener('keydown', closedMenuEsc);
         scrollLock.enableScrolling();
@@ -39,27 +52,5 @@ function activateMobileMenu() {
     });
   }
 }
-
-// mobileMenu.classList.add('nav__list--close');
-// toggleMenu.classList.add('menu-toggle--no-js');
-// headerWrapper.classList.remove('header__wrapper--no-js');
-
-// function controlsScroll() {
-//   navItem.forEach((item) => {
-//     item.addEventListener('click', function () {
-//       if (item) {
-//         document.body.style.overflow = '';
-//         mobileMenu.classList.remove('nav__list--open');
-//         logoMenu.classList.remove('logo__icon--open');
-//         headerWrapper.classList.remove('header__wrapper--open');
-//         toggleMenu.classList.remove('black');
-//         toggleMenu.classList.remove('open');
-//       } else {
-//         document.body.style.overflow = 'hidden';
-//       }
-//     });
-//   });
-// }
-
 
 export {activateMobileMenu};
