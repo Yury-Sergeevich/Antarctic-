@@ -758,7 +758,7 @@ button,
 .nav--open .menu-toggle {
   padding: 20px;
   top: 10px;
-  right: 2px;
+  right: -15px;
 }
 
 .menu-toggle__line {
@@ -2071,7 +2071,7 @@ p {
     padding: 0;
     position: absolute;
     top: 20px;
-    left: 50px;
+    left: 16.5%;
   }
 
   .nav--open .logo__icon {
@@ -2125,7 +2125,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 75px 0 0 15px;
+    padding: 75px 0 0 27px;
     width: 89%;
     height: 100vh;
     background-color: #f9fbfd;
@@ -2143,7 +2143,7 @@ p {
     color: #011c40;
     display: inline-block;
     vertical-align: baseline;
-    padding: 10px 0 8px 10px;
+    padding: 10px 0 8px 0;
   }
 
   .menu-toggle {
