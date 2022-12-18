@@ -1,77 +1,94 @@
 .menu-toggle {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 24px;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 0.2s;
-  cursor: pointer;
   display: none;
 
-  &--no-js {
-    @include vp-767 {
-      @media (max-width: ($vp-768 - 1px)) {
-        display: block;
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 2px;
+      width: 24px;
+      height: 14px;
+      transition-duration: 1s;
+      cursor: pointer;
+      border: none;
+      padding: 24px;
+      background: transparent;
+      z-index: 20;
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: 1px solid #00c8ff;
+    }
+  }
+
+  @mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background: $primary-color;
       }
     }
   }
+}
+
+.nav--open .menu-toggle {
+  padding: 20px;
+  top: 10px;
+  right: 2px;
 }
 
 .menu-toggle__line {
   height: 2px;
   width: 24px;
   background: $second-color;
-
   position: absolute;
-  left: 13px;
-
+  left: 11px;
   transition-duration: 0.25s;
   transition-delay: 0.25s;
-
-  &::after {
-    content: "";
-    left: 0;
-    position: absolute;
-    top: 6px;
-    height: 1px;
-    width: 24px;
-    background: $second-color;
-    transition: transform 0.25s, top 0.25s 0.25s;
-  }
 
   &::before {
     content: "";
     left: 0;
     position: absolute;
     top: -6px;
-    height: 1px;
+    height: 2px;
+    width: 24px;
+    background: $second-color;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 6px;
+    height: 2px;
     width: 24px;
     background: $second-color;
     transition: transform 0.25s, top 0.25s 0.25s;
   }
 }
 
-.menu-toggle.open span {
+.nav--open .menu-toggle__line {
   transition-duration: 0.1s;
   transition-delay: 0.25s;
   background: transparent;
 }
 
-.menu-toggle.open.black span::before {
+.nav--open .menu-toggle .menu-toggle__line::before {
   transition: top 0.25s, transform 0.25s 0.25s;
   top: 0;
-  height: 2px;
-  width: 20px;
   transform: rotateZ(-45deg);
   background: $primary-color;
+  width: 19px;
 }
 
-.menu-toggle.open.black span::after {
+.nav--open .menu-toggle .menu-toggle__line::after {
   transition: top 0.4s, transform 0.25s 0.25s;
   top: 0;
-  height: 2px;
-  width: 20px;
   transform: rotateZ(45deg);
   background: $primary-color;
+  width: 19px;
 }

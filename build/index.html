@@ -19,34 +19,34 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__wrapper header__wrapper--no-js">
-          <div class="container">
-            <a class="header__logo logo" href="#">
-              <svg class="logo__icon logo__icon--close" role="img" aria-label="Логотип сайта" width="70" height="38">
-                <use xlink:href="img/sprite.svg#logotype"></use>
-              </svg>
-            </a>
-            <nav class="nav" aria-label="Основная">
-              <ul class="nav__list nav__list-nojs">
+        <div class="container">
+          <nav class="nav" aria-label="Основная">
+            <div class="nav__overlay">
+              <a class="header__logo logo" href="#">
+                <svg class="logo__icon" role="img" aria-label="Логотип сайта" width="70" height="38">
+                  <use xlink:href="img/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <ul class="nav__list nav__list-reset">
                 <li class="nav__item">
-                  <a href="#advantages">Преимущества</a>
+                  <a class="nav__item-link nav__item-link--anchor" href="#advantages">Преимущества</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#">Направления</a>
+                  <a class="nav__item-link nav__item-link--anchor" href="#">Направления</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#cruises">Ближайшие круизы</a>
+                  <a class="nav__item-link nav__item-link--anchor" href="#cruises">Ближайшие круизы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#address">Контакты</a>
+                  <a class="nav__item-link nav__item-link--anchor" href="#address">Контакты</a>
                 </li>
               </ul>
-            </nav>
+            </div>
             <button class="header__menu-toggle menu-toggle" type="button">
               <span class="menu-toggle__line"></span>
               <span class="visually-hidden">Открыть меню</span>
             </button>
-          </div>
+          </nav>
         </div>
         <section class="promo">
           <div class="promo__container">

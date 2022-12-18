@@ -1,6 +1,5 @@
 .logo {
   display: block;
-  margin-right: auto;
   cursor: default;
 
   @include vp-767 {
@@ -16,6 +15,17 @@
   }
 }
 
+.nav--open .logo {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1)) {
+      padding: 0;
+      position: absolute;
+      top: 20px;
+      left: 50px;
+    }
+  }
+}
+
 .logo__icon {
   fill: $second-color;
 
@@ -25,22 +35,11 @@
       height: 20px;
       transition: ease-in-out 0.4s;
     }
-  }
 
-  @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 42px;
-      height: 22px;
-
-      &--close {
-        fill: $second-color;
-      }
-
-      &--open {
-        fill: $primary-color;
-        position: absolute;
-        left: 15.5%;
-        z-index: 2;
+    @include vp-767 {
+      @media (max-width: ($vp-768 - 1)) {
+        width: 42px;
+        height: 22px;
       }
     }
   }
@@ -50,6 +49,16 @@
       &:hover:not(.focus-visible) {
         fill: #00c8ff;
       }
+    }
+  }
+}
+
+.nav--open .logo__icon {
+  @include vp-767 {
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 42px;
+      height: 22px;
+      fill: $primary-color;
     }
   }
 }

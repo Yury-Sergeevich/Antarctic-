@@ -10,12 +10,6 @@
       background-size: cover;
     }
   }
-
-  @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      background-position: 0 36px;
-    }
-  }
 }
 
 .advantages .container {
@@ -29,7 +23,7 @@
 
   @include vp-767 {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 91px 15px 63px 15px;
+      padding: 56px 15px 63px 15px;
     }
   }
 }
