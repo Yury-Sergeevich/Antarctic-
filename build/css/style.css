@@ -2067,6 +2067,10 @@ p {
     padding: 20px 0 0 15px;
   }
 
+  .nav__overlay-nojs .logo {
+    margin-right: 75%;
+  }
+
   .nav--open .logo {
     padding: 0;
     position: absolute;
@@ -2161,6 +2165,10 @@ p {
     padding: 24px;
     background: transparent;
     z-index: 20;
+  }
+
+  .nav__overlay-nojs + .menu-toggle {
+    display: none;
   }
 
   .promo__container {
