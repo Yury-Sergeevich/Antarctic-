@@ -2,13 +2,13 @@
   width: 100%;
   z-index: 10;
   position: relative;
-  background-image: url("../img/background/top-container@1x.jpg");
+  background-image: url("../img/background/promo-background@1x.jpg");
   background-repeat: no-repeat;
   background-color: #3873bc;
   background-size: cover;
 
-  @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/background/top-container@2x.jpg");
+  @include retina {
+    background-image: url("../img/background/promo-background@2x.jpg");
   }
 
   @include vp-1023 {
