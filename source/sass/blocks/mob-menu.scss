@@ -1,7 +1,5 @@
 .mob-menu {
   @mixin vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: none;
-    }
+    display: none;
   }
 }

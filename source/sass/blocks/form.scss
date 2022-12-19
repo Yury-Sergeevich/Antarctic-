@@ -5,18 +5,14 @@
   padding: 44px 50px 50px 50px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 auto 100px;
-      padding: 43px 50px 50px 50px;
-    }
+    margin: 0 auto 100px;
+    padding: 43px 50px 50px 50px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 36px 30px 40px 30px;
-      margin: 0;
-      width: 100%;
-    }
+    padding: 36px 30px 40px 30px;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -27,17 +23,13 @@
   color: $second-color;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 0 28px 0;
-    }
+    margin: 0 0 28px 0;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      @include font(18px, 140%, 500);
-      text-align: center;
-      margin: 0 0 27px 0;
-    }
+    @include font(18px, 140%, 500);
+    text-align: center;
+    margin: 0 0 27px 0;
   }
 }
 
@@ -55,33 +47,23 @@
   @include font(14px, 150%, 400);
 
   @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        outline: 2px solid #6fe0fc;
-      }
-    }
+    outline: 2px solid #6fe0fc;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 2px solid #42d2f6;
-    }
+    outline: 2px solid #42d2f6;
   }
 
   @include active {
-    &.focus-visible:active {
-      outline: 2px solid #53a9be;
-    }
+    outline: 2px solid #53a9be;
   }
 }
 
 .form__input {
   margin-bottom: 20px;
 
-  @mixin focus {
-    &.focus-visible:focus {
-      outline: 2px solid #88c7f7;
-    }
+  @include focus {
+    outline: 2px solid #88c7f7;
   }
 }
 
@@ -91,9 +73,7 @@
   margin: 0 0 30px 0;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 12px 0;
-    }
+    margin: 0 0 12px 0;
   }
 }
 
@@ -132,10 +112,8 @@
   background-color: $second-color;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 20px;
-      height: 20px;
-    }
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -150,10 +128,8 @@
   color: $second-color;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      top: -2px;
-      display: block;
-    }
+    top: -2px;
+    display: block;
   }
 }
 
@@ -168,37 +144,25 @@
   background: $second-color;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 9px 0 11px;
-    }
+    padding: 9px 0 11px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 11px 0 10px;
-      margin: 51px 0 0 0;
-    }
+    padding: 11px 0 10px;
+    margin: 51px 0 0 0;
   }
 
   @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        background: #6cbefd;
-        color: $second-color;
-      }
-    }
+    background: #6cbefd;
+    color: $second-color;
   }
 
-  @mixin active {
-    &.focus-visible:active {
-      background: #42a6f3;
-    }
+  @include active {
+    background: #42a6f3;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 2px solid #42d2f6;
-    }
+    outline: 2px solid #42d2f6;
   }
 
   &:disabled {

@@ -1,8 +1,6 @@
 .promo__container {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 0 0 88px 0;
-    }
+    padding: 0 0 88px 0;
   }
 }
 
@@ -10,15 +8,11 @@
   padding: 157px 0 247px 14.5%;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 183px 45px 247px 45px;
-    }
+    padding: 183px 45px 247px 45px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 130px 15px 66px 15px;
-    }
+    padding: 130px 15px 66px 15px;
   }
 }
 
@@ -31,21 +25,17 @@
   margin: 0 0 13px 0;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      @include font(50px, 60.95px, 700);
+    @include font(50px, 60.95px, 700);
 
-      width: 589px;
-      margin: 0 0 12px 0;
-    }
+    width: 589px;
+    margin: 0 0 12px 0;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      @include font(36px, 125%, 700);
+    @include font(36px, 125%, 700);
 
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
+    width: 100%;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -57,18 +47,14 @@
   width: 430px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      @include font(18px, 21.94px, 400);
-      margin: 0 0 29px 0;
-      width: 387px;
-    }
+    @include font(18px, 21.94px, 400);
+    margin: 0 0 29px 0;
+    width: 387px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      @include font(16px, 140%, 400);
-      margin: 0 0 25px 0;
-      width: 68.7%;
-    }
+    @include font(16px, 140%, 400);
+    margin: 0 0 25px 0;
+    width: 68.7%;
   }
 }

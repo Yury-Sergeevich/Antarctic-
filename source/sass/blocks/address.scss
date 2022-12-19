@@ -2,15 +2,11 @@
   padding: 120px 20px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 100px 45px 101px 45px;
-    }
+    padding: 100px 45px 101px 45px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 12px 15px 64px 15px;
-    }
+    padding: 12px 15px 64px 15px;
   }
 }
 
@@ -20,17 +16,13 @@
   column-gap: 100px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 30px;
-    }
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -40,18 +32,14 @@
 
 .address__map-wrapper img {
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      width: 100%;
-      height: 335px;
-      object-fit: cover;
-    }
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      object-fit: cover;
-      height: 316px;
-    }
+    object-fit: cover;
+    height: 316px;
   }
 }
 
@@ -62,18 +50,14 @@
   border: none;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      grid-template-columns: 324px 1fr;
-      width: 100%;
-      height: 335px;
-    }
+    grid-template-columns: 324px 1fr;
+    width: 100%;
+    height: 335px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 100%;
-      height: 316px;
-    }
+    width: 100%;
+    height: 316px;
   }
 }
 
@@ -83,10 +67,8 @@
   left: 217px;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      top: 224px;
-      left: 112px;
-    }
+    top: 224px;
+    left: 112px;
   }
 }
 
@@ -96,30 +78,22 @@
   padding: 75px 0 0 0;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 11px 0 0 0;
-      align-self: center;
-    }
+    padding: 11px 0 0 0;
+    align-self: center;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 0;
-    }
+    padding: 0;
   }
 }
 
 .address__info {
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      width: 88%;
-    }
+    width: 88%;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 100%;
-    }
+    width: 100%;
   }
 }
 
@@ -129,15 +103,11 @@
   margin: 0 0 32px 0;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 0 29px 0;
-    }
+    margin: 0 0 29px 0;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 27px 0;
-    }
+    margin: 0 0 27px 0;
   }
 }
 
@@ -162,15 +132,11 @@
   }
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 0 20px 0;
-    }
+    margin: 0 0 20px 0;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 21px 0;
-    }
+    margin: 0 0 21px 0;
   }
 }
 
@@ -196,34 +162,22 @@
   }
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin: 0 0 12px 0;
-    }
+    margin: 0 0 12px 0;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 36px 0;
-    }
+    margin: 0 0 36px 0;
   }
 
   @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        color: #008cff;
-      }
-    }
+    color: #008cff;
   }
 
   @include active {
-    &.focus-visible:active {
-      color: #005eac;
-    }
+    color: #005eac;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 1px solid #0161b0;
-    }
+    outline: 1px solid #0161b0;
   }
 }

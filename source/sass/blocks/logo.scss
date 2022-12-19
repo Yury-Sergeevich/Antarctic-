@@ -4,34 +4,26 @@
   margin-right: 83px;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1)) {
-      padding: 20px 0 0 15px;
-    }
+    padding: 20px 0 0 15px;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 1px solid #00c8ff;
-    }
+    outline: 1px solid #00c8ff;
   }
 }
 
 .nav__overlay-nojs .logo {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin-right: 75%;
-    }
+    margin-right: 75%;
   }
 }
 
 .nav--open .logo {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1)) {
-      padding: 0;
-      position: absolute;
-      top: 20px;
-      left: 16.5%;
-    }
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 16.5%;
   }
 }
 
@@ -39,35 +31,25 @@
   fill: $second-color;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      width: 38px;
-      height: 20px;
-      transition: ease-in-out 0.4s;
-    }
+    width: 38px;
+    height: 20px;
+    transition: ease-in-out 0.4s;
 
     @include vp-767 {
-      @media (max-width: ($vp-768 - 1)) {
-        width: 42px;
-        height: 22px;
-      }
+      width: 42px;
+      height: 22px;
     }
   }
 
   @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        fill: #00c8ff;
-      }
-    }
+    fill: #00c8ff;
   }
 }
 
 .nav--open .logo__icon {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 42px;
-      height: 22px;
-      fill: $primary-color;
-    }
+    width: 42px;
+    height: 22px;
+    fill: $primary-color;
   }
 }

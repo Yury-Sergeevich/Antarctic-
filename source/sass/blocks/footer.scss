@@ -8,17 +8,13 @@
   padding: 50px 20px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 42px 45px 46px 45px;
-    }
+    padding: 42px 45px 46px 45px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 40px 15px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    padding: 40px 15px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -29,37 +25,27 @@
   cursor: default;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin-right: 25px;
-    }
+    margin-right: 25px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 24px 0;
-    }
+    margin: 0 0 24px 0;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 2px solid #0092bb;
-    }
+    outline: 2px solid #0092bb;
   }
 }
 
 .footer__logo img {
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      width: 38px;
-      height: 32px;
-    }
+    width: 38px;
+    height: 32px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      width: 42px;
-      height: 22px;
-    }
+    width: 42px;
+    height: 22px;
   }
 }
 
@@ -76,10 +62,8 @@
   align-items: center;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -87,23 +71,17 @@
   margin-right: 33px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      margin-right: 23px;
-    }
+    margin-right: 23px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 13px 0;
-    }
+    margin: 0 0 13px 0;
   }
 }
 
 .footer__nav-item {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      margin: 0 0 24px 0;
-    }
+    margin: 0 0 24px 0;
   }
 }
 
@@ -117,9 +95,7 @@
   transition: 0.2s ease-in;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      @include font(12px, 15px, 500);
-    }
+    @include font(12px, 15px, 500);
   }
 
   &::after {
@@ -145,14 +121,10 @@
   }
 
   @include active {
-    &.focus-visible:active {
-      color: #04191f;
-    }
+    color: #04191f;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 2px solid #0092bb;
-    }
+    outline: 2px solid #0092bb;
   }
 }
