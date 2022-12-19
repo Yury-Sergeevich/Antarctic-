@@ -4,11 +4,9 @@
   background-color: #d7ebff;
   background-size: cover;
 
-  @mixin retina {
-    @media (min-resolution: $retina-dppx) {
-      background: url("../img/background/advantages-backg@2x.jpg") no-repeat;
-      background-size: cover;
-    }
+  @include retina {
+    background: url("../img/background/advantages-backg@2x.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -16,15 +14,11 @@
   padding: 110px 20px 119px 20px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 90px 45px 100px 45px;
-    }
+    padding: 90px 45px 100px 45px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      padding: 56px 15px 63px 15px;
-    }
+    padding: 56px 15px 63px 15px;
   }
 }
 
@@ -36,19 +30,15 @@
   margin: 0 auto 49px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      @include font(26px, 150%, 600);
-      width: 212px;
-      margin: 0 auto 49px;
-    }
+    @include font(26px, 150%, 600);
+    width: 212px;
+    margin: 0 auto 49px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      @include font(24px, 150%, 600);
-      margin: 0 auto 31px;
-      width: 196px;
-    }
+    @include font(24px, 150%, 600);
+    margin: 0 auto 31px;
+    width: 196px;
   }
 }
 
@@ -61,17 +51,13 @@
   column-gap: 40px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      column-gap: 30px;
-    }
+    column-gap: 30px;
   }
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      grid-template-columns: none;
-      grid-template-rows: repeat(3, auto);
-      row-gap: 30px;
-    }
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 30px;
   }
 }
 
@@ -81,9 +67,7 @@
   padding: 81px 42px 26px 30px;
 
   @include vp-1023 {
-    @media (max-width: ($vp-1024 - 1px)) {
-      padding: 71px 15px 0 20px;
-    }
+    padding: 71px 15px 0 20px;
   }
 
   &--liner {

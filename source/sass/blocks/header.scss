@@ -4,8 +4,10 @@
   position: relative;
   background-image: url("../img/background/promo-background@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #3873bc;
   background-size: cover;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @include retina {
     background-image: url("../img/background/promo-background@2x.jpg");
@@ -14,9 +16,10 @@
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
       background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat;
+      filter: none;
       background-size: cover;
 
-      @media (min-resolution: $retina-dppx) {
+      @include retina {
         background-image: url("../img/background/promo-background-tablet@2x.jpg");
       }
     }
@@ -33,11 +36,11 @@
 .header .container {
   display: flex;
   align-items: center;
-  padding: 35px 20px 35px 20px;
+  padding: 35px 20px;
 
   @include vp-1023 {
     @media (max-width: ($vp-1024 - 1px)) {
-      padding: 30px 45px 30px 45px;
+      padding: 30px 45px;
     }
   }
 
