@@ -751,14 +751,13 @@ button,
   display: none;
 }
 
-.menu-toggle.focus-visible:focus.focus-visible:focus {
+.menu-toggle.focus-visible:focus {
   outline: 1px solid #00c8ff;
 }
 
 .nav--open .menu-toggle {
   padding: 20px;
   top: 10px;
-  right: -15px;
 }
 
 .menu-toggle__line {
@@ -2051,6 +2050,27 @@ p {
   .container {
     padding: 0 15px;
   }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    width: 24px;
+    height: 14px;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    cursor: pointer;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    z-index: 20;
+  }
+
+  .nav__overlay-nojs + .menu-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
@@ -2148,27 +2168,6 @@ p {
     display: inline-block;
     vertical-align: baseline;
     padding: 10px 0 8px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 6px;
-    right: 2px;
-    width: 24px;
-    height: 14px;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    cursor: pointer;
-    border: none;
-    padding: 24px;
-    background: transparent;
-    z-index: 20;
-  }
-
-  .nav__overlay-nojs + .menu-toggle {
-    display: none;
   }
 
   .promo__container {
@@ -2546,6 +2545,10 @@ p {
 }
 
 @media (hover: hover) {
+  .menu-toggle:hover:not(.focus-visible) {
+    background: #011c40;
+  }
+
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }

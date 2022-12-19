@@ -2,49 +2,38 @@
   display: none;
 
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: block;
-      position: absolute;
-      top: 6px;
-      right: 2px;
-      width: 24px;
-      height: 14px;
-      transition-duration: 1s;
-      cursor: pointer;
-      border: none;
-      padding: 24px;
-      background: transparent;
-      z-index: 20;
-    }
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    width: 24px;
+    height: 14px;
+    transition-duration: 1s;
+    cursor: pointer;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    z-index: 20;
   }
 
   @include focus {
-    &.focus-visible:focus {
-      outline: 1px solid #00c8ff;
-    }
+    outline: 1px solid #00c8ff;
   }
 
-  @mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        background: $primary-color;
-      }
-    }
+  @include hover {
+    background: $primary-color;
   }
 }
 
 .nav__overlay-nojs + .menu-toggle {
   @include vp-767 {
-    @media (max-width: ($vp-768 - 1px)) {
-      display: none;
-    }
+    display: none;
   }
 }
 
 .nav--open .menu-toggle {
   padding: 20px;
   top: 10px;
-  right: -15px;
 }
 
 .menu-toggle__line {
