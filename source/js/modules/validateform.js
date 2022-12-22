@@ -4,7 +4,6 @@ const tel = document.getElementById('tel');
 const email = document.getElementById('email');
 const checkbox = document.getElementById('checkbox');
 
-
 function validateForm() {
   form.addEventListener('submit', function (evt) {
     evt.preventDefault();
@@ -14,7 +13,6 @@ function validateForm() {
       localStorage.setItem('email', email.value);
       form.submit();
     }
-    form.reset();
   });
 }
 

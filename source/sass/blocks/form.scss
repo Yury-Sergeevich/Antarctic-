@@ -129,7 +129,6 @@
 
   @include vp-767 {
     top: -2px;
-    display: block;
   }
 }
 
@@ -149,7 +148,6 @@
 
   @include vp-767 {
     padding: 11px 0 10px;
-    margin: 51px 0 0 0;
   }
 
   @include hover {

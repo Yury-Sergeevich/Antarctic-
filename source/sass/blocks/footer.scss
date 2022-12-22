@@ -4,8 +4,9 @@
 
 .footer .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 50px 20px;
+  padding: 50px 89px;
 
   @include vp-1023 {
     padding: 42px 45px 46px 45px;
@@ -22,6 +23,7 @@
   display: block;
   outline: none;
   margin-right: 40px;
+  margin-bottom: 10px;
   cursor: default;
 
   @include vp-1023 {
@@ -30,10 +32,6 @@
 
   @include vp-767 {
     margin: 0 0 24px 0;
-  }
-
-  @include focus {
-    outline: 2px solid #0092bb;
   }
 }
 
@@ -51,6 +49,12 @@
 
 .footer__nav {
   margin-right: auto;
+  margin-bottom: 10px;
+  width: 61%;
+
+  @include vp-1023 {
+    width: 65%;
+  }
 }
 
 .footer__nav-list {
@@ -127,4 +131,9 @@
   @include focus {
     outline: 2px solid #0092bb;
   }
+}
+
+.footer__social {
+  margin: 0;
+  margin-bottom: 10px;
 }

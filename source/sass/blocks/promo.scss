@@ -1,18 +1,18 @@
 .promo__container {
   @include vp-767 {
-    padding: 0 0 88px 0;
+    padding: 0 0 130px 0;
   }
 }
 
 .promo__content {
-  padding: 157px 0 247px 14.5%;
+  padding: 122px 0 212px 8.2%;
 
   @include vp-1023 {
-    padding: 183px 45px 247px 45px;
+    padding: 183px 45px 247px 0;
   }
 
   @include vp-767 {
-    padding: 130px 15px 66px 15px;
+    padding: 130px 15px 154px 15px;
   }
 }
 

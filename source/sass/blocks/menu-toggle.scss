@@ -19,10 +19,6 @@
   @include focus {
     outline: 1px solid #00c8ff;
   }
-
-  @include hover {
-    background: $primary-color;
-  }
 }
 
 .nav__overlay-nojs + .menu-toggle {

@@ -61,6 +61,9 @@
 }
 
 .nav__item {
+  margin-bottom: 10px;
+  padding-top: 10px;
+
   &:not(:last-child) {
     margin-right: 33px;
 
@@ -78,6 +81,7 @@
 
 .nav__item-link {
   position: relative;
+  padding-top: 10px;
 
   @include font(16px, 20px, 500);
 

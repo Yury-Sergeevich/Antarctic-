@@ -9,30 +9,51 @@
   background-size: cover;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-  @include retina {
-    background-image: url("../img/background/promo-background@2x.jpg");
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/background/promo-background@2x.jpg");
+    }
+
+    @supports (background-image: url("../img/background/promo-background@1x.webp")) {
+      background-image: url("../img/background/promo-background@1x.webp");
+
+      @include retina {
+        background-image: url("../img/background/promo-background@2x.webp");
+      }
+    }
   }
 
   @include vp-1023 {
-    background: url("../img/background/promo-background-tablet@1x.jpg") no-repeat;
+    background-image: url("../img/background/promo-background-tablet@1x.jpg");
     filter: none;
     background-size: cover;
 
-    @include retina {
-      background-image: url("../img/background/promo-background-tablet@2x.jpg");
+    @media (min-width: 768px) {
+      @include retina {
+        background-image: url("../img/background/promo-background-tablet@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/background/promo-background-tablet@1x.webp")) {
+        background-image: url("../img/background/promo-background-tablet@1x.webp");
+
+        @include retina {
+          background-image: url("../img/background/promo-background-tablet@2x.webp");
+        }
+      }
     }
   }
 
   @include vp-767 {
-    background-position: 47% -43px;
-    background-size: auto;
+    background-position: 42% 0;
+    background-size: cover;
   }
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  padding: 35px 20px;
+  max-width: 1338px;
+  padding: 35px 89px;
 
   @include vp-1023 {
     padding: 30px 45px;

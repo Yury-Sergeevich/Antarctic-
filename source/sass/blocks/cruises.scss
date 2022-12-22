@@ -2,23 +2,23 @@
   @include font(28px, 150%, 600);
   margin: 0 auto 49px;
   text-align: center;
-  width: 302px;
+  width: 31.2%;
 
   @include vp-1023 {
     @include font(26px, 150%, 600);
-    width: 281px;
+    width: 41.9%;
     margin: 0 auto 48px;
   }
 
   @include vp-767 {
     @include font(24px, 150%, 600);
-    width: 270px;
+    width: 100%;
     margin: 0 auto 31px;
   }
 }
 
 .cruises .container {
-  padding: 86px 30px 120px 30px;
+  padding: 86px 89px 120px 89px;
 
   @include vp-1023 {
     grid-template-columns: repeat(auto-fit, 309px);
@@ -36,6 +36,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 260px);
+  justify-content: center;
   gap: 30px 32px;
 
   @include vp-1023 {
@@ -162,7 +163,7 @@
 
 .cruises__back-content h3 {
   @include font(18px, 150%, 500);
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   color: $second-color;
 }
 
