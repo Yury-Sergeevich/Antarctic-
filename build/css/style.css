@@ -435,7 +435,7 @@ html {
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 500;
-  color: e;
+  color: #011c40;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -831,7 +831,7 @@ button,
   -webkit-transform: rotateZ(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotateZ(-45deg);
-  background: e;
+  background: #011c40;
   width: 19px;
 }
 
@@ -845,7 +845,7 @@ button,
   -webkit-transform: rotateZ(45deg);
   -ms-transform: rotate(45deg);
   transform: rotateZ(45deg);
-  background: e;
+  background: #011c40;
   width: 19px;
 }
 
@@ -1173,7 +1173,7 @@ p {
   display: block;
   padding: 11px 0 8px 0;
   margin-top: auto;
-  color: e;
+  color: #011c40;
   text-align: center;
   background-color: #f9fbfd;
   cursor: pointer;
@@ -1236,7 +1236,7 @@ p {
 
 .form {
   width: 403px;
-  background-color: e;
+  background-color: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   padding: 44px 50px 50px 50px;
@@ -1256,7 +1256,7 @@ p {
   border: none;
   padding: 11px 0 11px 16px;
   outline: none;
-  color: e;
+  color: #011c40;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 150%;
@@ -1434,7 +1434,7 @@ p {
   font-weight: 400;
   display: block;
   font-style: normal;
-  color: e;
+  color: #011c40;
   margin: 0 0 22px 0;
   padding-left: 28px;
   position: relative;
@@ -1459,7 +1459,7 @@ p {
   display: inline-block;
   vertical-align: baseline;
   font-style: normal;
-  color: e;
+  color: #011c40;
   padding-left: 28px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -1485,7 +1485,7 @@ p {
 }
 
 .footer {
-  background-color: e;
+  background-color: #011c40;
 }
 
 .footer .container {
@@ -2117,7 +2117,7 @@ p {
   .nav--open .logo__icon {
     width: 42px;
     height: 22px;
-    fill: e;
+    fill: #011c40;
   }
 
   .nav__overlay-nojs {
@@ -2180,7 +2180,7 @@ p {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    color: e;
+    color: #011c40;
     display: inline-block;
     vertical-align: baseline;
     padding: 10px 0 8px 0;
