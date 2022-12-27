@@ -24,6 +24,10 @@
   }
 }
 
+.nav__overlay-nojs .logo__icon {
+  fill: $primary-color;
+}
+
 .logo__icon {
   fill: $second-color;
 

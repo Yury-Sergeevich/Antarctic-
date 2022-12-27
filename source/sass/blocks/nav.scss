@@ -15,6 +15,7 @@
 .nav__overlay-nojs {
   @include vp-767 {
     flex-direction: column;
+    background: #ffffff;
   }
 }
 
@@ -25,7 +26,6 @@
     background-color: $second-color;
     width: 89%;
     align-self: flex-end;
-    height: 100vh;
     padding: 15px 15px;
   }
 }
@@ -36,6 +36,8 @@
     width: 100%;
     height: 100vh;
     justify-content: end;
+    position: absolute;
+    top: 0;
   }
 }
 

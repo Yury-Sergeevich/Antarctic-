@@ -663,6 +663,10 @@ button,
   outline: none;
 }
 
+.nav__overlay-nojs .logo__icon {
+  fill: #011c40;
+}
+
 .logo__icon {
   fill: #f9fbfd;
 }
@@ -1019,8 +1023,8 @@ p {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(100px, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 30px 32px;
 }
 
@@ -2125,6 +2129,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    background: #ffffff;
   }
 
   .nav__overlay-nojs .nav__list {
@@ -2137,7 +2142,6 @@ p {
     width: 89%;
     -ms-flex-item-align: end;
     align-self: flex-end;
-    height: 100vh;
     padding: 15px 15px;
   }
 
@@ -2148,6 +2152,8 @@ p {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
+    position: absolute;
+    top: 0;
   }
 
   .nav__list {
@@ -2321,13 +2327,6 @@ p {
   .cruises__item-front h3 {
     bottom: 16px;
     left: 25px;
-  }
-
-  .cruises__item-front--odysseus img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: -89px 0;
-    object-position: -89px 0;
   }
 
   .feedback {
