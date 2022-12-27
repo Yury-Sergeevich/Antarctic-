@@ -49,7 +49,6 @@
 
 .footer__nav {
   margin-right: auto;
-  margin-bottom: 10px;
   width: 61%;
 
   @include vp-1023 {
@@ -84,6 +83,8 @@
 }
 
 .footer__nav-item {
+  margin-bottom: 10px;
+
   @include vp-767 {
     margin: 0 0 24px 0;
   }
@@ -135,5 +136,4 @@
 
 .footer__social {
   margin: 0;
-  margin-bottom: 10px;
 }

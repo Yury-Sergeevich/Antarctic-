@@ -26,6 +26,7 @@ closeOverlay.addEventListener('click', (evt) => {
   if (target === closeOverlay) {
     if (nav.classList.contains('nav--open')) {
       nav.classList.remove('nav--open');
+      scrollLock.enableScrolling();
     }
   }
 });
